@@ -48,7 +48,7 @@ evidence-render = "evidence.render.__main__:main"
 
 [project.optional-dependencies]
 test = ["pytest>=8.0,<9"]
-local-embedder = ["sentence-transformers>=2.2,<3"]
+local-embedder = ["sentence-transformers>=2.2,<6"]
 # 私有验收工具的可选 XLSX 依赖。
 xlsx-audit = ["openpyxl>=3.1,<4"]
 # benchmark 的可选 parquet 依赖。
