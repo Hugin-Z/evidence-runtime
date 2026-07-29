@@ -106,12 +106,14 @@ jobs:
       # 契约/crosswalk 从 wheel 取——证明发行链完整。
       - name: shareable demo full-chain from wheel (outside repo)
         working-directory: ${{ runner.temp }}
-        run: bash "${GITHUB_WORKSPACE}/examples/demo-proposal/run_chain.sh" \
-          "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-wheel" \
-          "${GITHUB_WORKSPACE}/examples/demo-proposal"
+        run: |
+          bash "${GITHUB_WORKSPACE}/examples/demo-proposal/run_chain.sh" \
+            "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-wheel" \
+            "${GITHUB_WORKSPACE}/examples/demo-proposal"
 
       - name: deliverable demo full-chain from wheel (outside repo)
         working-directory: ${{ runner.temp }}
-        run: bash "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable/run_chain.sh" \
-          "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-deliverable-wheel" \
-          "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable"
+        run: |
+          bash "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable/run_chain.sh" \
+            "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-deliverable-wheel" \
+            "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable"
