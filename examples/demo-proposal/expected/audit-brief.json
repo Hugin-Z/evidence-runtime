@@ -1,0 +1,337 @@
+{
+  "audit_brief_version": "m4-audit-brief-v1",
+  "meta": {
+    "contract_id": "solution_material_completeness_v1",
+    "doc_type": "proposal-document",
+    "doc_type_zh": "解决方案建议书",
+    "project_id": null,
+    "source_brief_version": "m2-brief-v1",
+    "contract_gate": "partial"
+  },
+  "instructions": {
+    "claim_extraction": "代码已把每个 section 的收货正文机械切成句级 claim_units；这不是语义 atomic-claim 提取。审计者必须为**每个非占位 unit**提交一条 claim，claim_text 必须复制该 unit 的**完整文本**，不得只取其中有证据的子串；verdict 也由审计者判定。一句含多个断言时按整个 unit 综合判级。",
+    "verdicts": {
+      "supported": "该 claim 的事实内容能由本 section 证据包里的逐字证据直接支持；必须在 cited_span_refs 列出所依据的 span_ref（至少一条）。",
+      "weak": "证据与 claim 相关但不足以定论（口径不一致、部分覆盖、需推断）。可引 span_ref。",
+      "unsupported": "证据包中没有能支持该 claim 的内容，或该 claim 属禁区 section 的结论性断言。不得为凑 supported 而引不相干 span。**判 unsupported 会阻断交付版**（须处置）。",
+      "contradicted": "证据包里的证据与该 claim 相矛盾（口径冲突、数值相反等）。**判 contradicted 会阻断交付版**（须处置或修正）。",
+      "out_of_scope": "该 claim 属 out_of_evidence_scope section（走 drafter L3/intake），**不受本系统证据背书**——不算违规，但 Engine 不对其真伪表态。"
+    },
+    "citation_rule": "cited_span_refs 只能取自本 section evidence_pack 的 span_ref；不得引其它 section 的 ref，不得杜撰 ref，不得改写被引证据逐字内容。",
+    "claim_unit_binding": "每条 claim 必须绑定到本 section 某段落 claim_units 里的确切**单元**（句级）：填 claim_unit_id，且 claim_text 与该单元**完整正文**规范化后相等（原样提交整句，勿只摘局部子串；空白差异会被规范化）；建议一并填 paragraph_id + paragraph_hash（现算，防旧稿）。**每个非占位 claim_unit 都要被 ≥1 条 claim 覆盖**——不得跳过任何一句；近似纯占位文案的单元无需 claim，但实质断言与【待补充】同句仍须审计。绑定缺失/单元不存在/claim_text 不等于完整单元 → CLAIM_NOT_IN_DRAFT；有非占位单元未覆盖或整节免审 → INCOMPLETE_AUDIT。代码只做句级切分；claim 的提交与 supported/weak 等判级均由审计者完成。",
+    "auditor_agnostic": "本指令不假设审计者身份：生成者自审或独立 agent 复审均按同一 schema 产出审计单，Engine 的确定性复核对两者完全一致。meta.auditor 仅作记录、不影响复核。",
+    "engine_boundary": "Engine 只做确定性复核（引用存在性 / 逐字未改写 / 禁区辖区 / 逐 section 引用辖区 / 覆盖完整性）；supported 与 weak 的语义强弱由审计者判，Engine 不复核。但你的 verdict **有强制力**：判 unsupported/contradicted 会阻断交付版——请据实判级，不要为放行而抬判级。"
+  },
+  "restricted_sections": [],
+  "out_of_scope_sections": [],
+  "sections": [
+    {
+      "section_id": "02",
+      "section_title": "项目理解",
+      "gate": "allow",
+      "out_of_evidence_scope": false,
+      "restricted": false,
+      "restriction_note": null,
+      "generated_text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。\n园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。\n建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+      "evidence_pack": [
+        {
+          "span_ref": "e1",
+          "content": "> （合成示例，非真实数据）\n\n## 一、建设背景与依据\n\n近年国家出台数字经济与智慧城市**政策**，要求推进园区治理数字化。本项目**依据**上级主管部门\n",
+          "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告",
+          "supports_fields": [
+            "basis_reference_or_background",
+            "relationship_to_current_project"
+          ],
+          "slot_id": "background_and_basis"
+        },
+        {
+          "span_ref": "e2",
+          "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+          "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+          "supports_fields": [
+            "relationship_to_current_project"
+          ],
+          "slot_id": "background_and_basis"
+        },
+        {
+          "span_ref": "e3",
+          "content": "的专项规划批复，**背景**是园区管理长期依赖人工台账、效率低下。\n\n## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n",
+          "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 一、建设背景与依据",
+          "supports_fields": [
+            "current_state",
+            "specific_problem_or_need",
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e4",
+          "content": "## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n底座、统一门户、统一运维；对实时监测与告警的**需求**迫切。\n\n",
+          "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 二、现状问题与需求分析",
+          "supports_fields": [
+            "current_state",
+            "specific_problem_or_need",
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e5",
+          "content": "# 示范市智慧园区管理平台 需求清单\n\n> （合成示例，非真实数据）\n",
+          "source": "《需求清单》· 示范市智慧园区管理平台 需求清单",
+          "supports_fields": [
+            "specific_problem_or_need",
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e6",
+          "content": "二、实施条件与边界\n\n**实施条件**：园区提供机房与网络环境；**实施边界**：本方案不含第三方系统的内部改造。**实施**前投标方将核查现场**条件**，不足处由投标方承担补充。",
+          "source": "《建设方案》· 二、实施条件与边界",
+          "supports_fields": [
+            "specific_problem_or_need",
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e7",
+          "content": "示范市智慧园区管理平台 建设方案\n\n（合成示例，非真实数据）\n",
+          "source": "《建设方案》· 正文",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e8",
+          "content": "# 示范市智慧园区管理平台 报价与工期\n\n> （合成示例，报价与工期为演示占位）\n",
+          "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e9",
+          "content": "# 示范市智慧园区管理平台 可行性研究报告\n\n> （合成示例，非真实数据）\n",
+          "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e10",
+          "content": "## 三、建设目标\n\n**目标**一：建成统一的园区管理平台；**目标**二：打通不少于三个业务系统的数据接口；\n**目标**三：形成可持续运营机制。\n",
+          "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 三、建设目标",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e11",
+          "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+          "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e12",
+          "content": "| 费用条目 | 估算（万元） |\n|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n",
+          "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        },
+        {
+          "span_ref": "e13",
+          "content": "|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n工期：合同签订后六个月。\n",
+          "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+          "supports_fields": [
+            "affected_subject_business_or_process"
+          ],
+          "slot_id": "current_state_and_needs"
+        }
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "02#p01",
+          "content_hash": "8eccdeefb6d798c0",
+          "text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。",
+          "is_placeholder": false,
+          "span_refs": [
+            "e1"
+          ],
+          "claim_units": [
+            {
+              "unit_id": "02#p01#u01",
+              "text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。",
+              "is_placeholder": false
+            }
+          ]
+        },
+        {
+          "paragraph_id": "02#p02",
+          "content_hash": "41eeb48323981446",
+          "text": "园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。",
+          "is_placeholder": false,
+          "span_refs": [
+            "e4"
+          ],
+          "claim_units": [
+            {
+              "unit_id": "02#p02#u01",
+              "text": "园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。",
+              "is_placeholder": false
+            }
+          ]
+        },
+        {
+          "paragraph_id": "02#p03",
+          "content_hash": "7d16ef9533c4a76e",
+          "text": "建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+          "is_placeholder": false,
+          "span_refs": [
+            "e10"
+          ],
+          "claim_units": [
+            {
+              "unit_id": "02#p03#u01",
+              "text": "建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+              "is_placeholder": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "03",
+      "section_title": "方案架构",
+      "gate": "limited",
+      "out_of_evidence_scope": false,
+      "restricted": false,
+      "restriction_note": null,
+      "generated_text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。\n【待补充：与需求/目标的对齐说明，以及实施主体、实际实施内容与上线验收状态】",
+      "evidence_pack": [
+        {
+          "span_ref": "e14",
+          "content": "（合成示例，非真实数据）\n\n一、建设内容与能力\n\n平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n",
+          "source": "《建设方案》· 一、建设内容与能力",
+          "supports_fields": [
+            "concrete_content_module_function_or_capability"
+          ],
+          "slot_id": "solution_content_and_capabilities"
+        },
+        {
+          "span_ref": "e15",
+          "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+          "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+          "supports_fields": [
+            "concrete_content_module_function_or_capability"
+          ],
+          "slot_id": "solution_content_and_capabilities"
+        }
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "03#p01",
+          "content_hash": "a04ddb2ea757ce4d",
+          "text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。",
+          "is_placeholder": false,
+          "span_refs": [
+            "e14"
+          ],
+          "claim_units": [
+            {
+              "unit_id": "03#p01#u01",
+              "text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。",
+              "is_placeholder": false
+            }
+          ]
+        },
+        {
+          "paragraph_id": "03#p02",
+          "content_hash": "790207bb566ca2e0",
+          "text": "【待补充：与需求/目标的对齐说明，以及实施主体、实际实施内容与上线验收状态】",
+          "is_placeholder": true,
+          "span_refs": [],
+          "claim_units": [
+            {
+              "unit_id": "03#p02#u01",
+              "text": "【待补充：与需求/目标的对齐说明，以及实施主体、实际实施内容与上线验收状态】",
+              "is_placeholder": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "04",
+      "section_title": "方案亮点",
+      "gate": "limited",
+      "out_of_evidence_scope": false,
+      "restricted": false,
+      "restriction_note": null,
+      "generated_text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。\n【待补充：亮点与本项目需求/目标的对齐说明】",
+      "evidence_pack": [
+        {
+          "span_ref": "e16",
+          "content": "（合成示例，非真实数据）\n\n一、建设内容与能力\n\n平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n",
+          "source": "《建设方案》· 一、建设内容与能力",
+          "supports_fields": [
+            "concrete_content_module_function_or_capability"
+          ],
+          "slot_id": "solution_content_and_capabilities"
+        },
+        {
+          "span_ref": "e17",
+          "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+          "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+          "supports_fields": [
+            "concrete_content_module_function_or_capability"
+          ],
+          "slot_id": "solution_content_and_capabilities"
+        }
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "04#p01",
+          "content_hash": "ea6de996326cf8b9",
+          "text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。",
+          "is_placeholder": false,
+          "span_refs": [
+            "e16"
+          ],
+          "claim_units": [
+            {
+              "unit_id": "04#p01#u01",
+              "text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。",
+              "is_placeholder": false
+            }
+          ]
+        },
+        {
+          "paragraph_id": "04#p02",
+          "content_hash": "169a0c744e74df6b",
+          "text": "【待补充：亮点与本项目需求/目标的对齐说明】",
+          "is_placeholder": true,
+          "span_refs": [],
+          "claim_units": [
+            {
+              "unit_id": "04#p02#u01",
+              "text": "【待补充：亮点与本项目需求/目标的对齐说明】",
+              "is_placeholder": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit_sheet_schema_version": "m4-audit-sheet-v1"
+}

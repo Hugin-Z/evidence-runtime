@@ -1,0 +1,120 @@
+{
+  "audit_sheet_schema_version": "m4-audit-sheet-v1",
+  "meta": {
+    "auditor": "demo-auditor",
+    "audited_at": "2026-07-28"
+  },
+  "claims": [
+    {
+      "claim_text": "本项目依据示范市数字政府建设三年行动方案与上级主管部门专项规划批复推进，与当前项目直接承接、逐条对应。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e1"
+      ],
+      "paragraph_id": "02#p01",
+      "paragraph_hash": "73dac570c9a33cb0",
+      "claim_unit_id": "02#p01#u01"
+    },
+    {
+      "claim_text": "全市政务数据分散在各部门独立系统、数据不通，存在信息孤岛问题，受影响对象为市大数据局与各委办局业务处室。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e2"
+      ],
+      "paragraph_id": "02#p02",
+      "paragraph_hash": "78a32458dccb710a",
+      "claim_unit_id": "02#p02#u01"
+    },
+    {
+      "claim_text": "主要需求为统一数据归集、统一共享接口与统一质量治理，对跨部门实时数据交换与质量监测需求迫切。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e3"
+      ],
+      "paragraph_id": "02#p03",
+      "paragraph_hash": "5aa8a30dd2c2555e",
+      "claim_unit_id": "02#p03#u01"
+    },
+    {
+      "claim_text": "平台建设内容包括统一数据归集通道、数据质量治理引擎、共享交换服务网关与运营监测中心四大模块。",
+      "section_id": "03",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e20"
+      ],
+      "paragraph_id": "03#p01",
+      "paragraph_hash": "78bfd53709b9343a",
+      "claim_unit_id": "03#p01#u01"
+    },
+    {
+      "claim_text": "核心能力涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。",
+      "section_id": "03",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e21"
+      ],
+      "paragraph_id": "03#p02",
+      "paragraph_hash": "4261b261f56ae490",
+      "claim_unit_id": "03#p02#u01"
+    },
+    {
+      "claim_text": "各建设内容与需求逐条对应，归集通道对应统一归集需求、质量引擎对应脏数据问题、共享网关对应审批链路、监测中心对应实时监测需求。",
+      "section_id": "03",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e22"
+      ],
+      "paragraph_id": "03#p03",
+      "paragraph_hash": "cb26c19a7da94d70",
+      "claim_unit_id": "03#p03#u01"
+    },
+    {
+      "claim_text": "本方案亮点在于四大模块与需求逐条对齐，每一项能力都对应明确的需求或目标，无悬空能力。",
+      "section_id": "04",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e39"
+      ],
+      "paragraph_id": "04#p01",
+      "paragraph_hash": "2b48d317eae0c209",
+      "claim_unit_id": "04#p01#u01"
+    },
+    {
+      "claim_text": "数据质量治理引擎提供校验规则库与脏数据拦截能力，是区别于同类方案的关键亮点。",
+      "section_id": "04",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e40"
+      ],
+      "paragraph_id": "04#p02",
+      "paragraph_hash": "f816696fc2a16735",
+      "claim_unit_id": "04#p02#u01"
+    },
+    {
+      "claim_text": "邻市大数据管理局政务数据共享平台项目已上线运行并通过第三方验收，目前处于稳定应用阶段。",
+      "section_id": "05",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e46"
+      ],
+      "paragraph_id": "05#p01",
+      "paragraph_hash": "cf888a9141d97939",
+      "claim_unit_id": "05#p01#u01"
+    },
+    {
+      "claim_text": "某省属国有集团数据中台项目已完成上线并通过集团验收，现处于常态化应用与运维阶段。",
+      "section_id": "05",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e47"
+      ],
+      "paragraph_id": "05#p02",
+      "paragraph_hash": "d2209516d84f8edf",
+      "claim_unit_id": "05#p02#u01"
+    }
+  ],
+  "no_claim_sections": []
+}

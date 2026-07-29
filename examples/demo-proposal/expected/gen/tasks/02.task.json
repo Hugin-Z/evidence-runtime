@@ -1,0 +1,165 @@
+{
+  "section_id": "02",
+  "section_title": "项目理解",
+  "gate": "allow",
+  "gate_meaning": "证据充分，允许正常撰写",
+  "writing": {
+    "structure": [
+      "项目背景与建设依据",
+      "现状问题与需求分析"
+    ],
+    "tone": "以甲方材料为准复述背景与现状，不引申、不评价",
+    "length_basis": "中等，覆盖背景与现状两块"
+  },
+  "project_params": {
+    "project_name": "示范市智慧园区管理平台",
+    "client_name": "示范市园区管理办公室（虚构）",
+    "industry_domain": "智慧园区",
+    "project_number": null,
+    "budget": "180万元",
+    "duration": "6个月"
+  },
+  "evidence": [
+    {
+      "span_ref": "e1",
+      "content": "> （合成示例，非真实数据）\n\n## 一、建设背景与依据\n\n近年国家出台数字经济与智慧城市**政策**，要求推进园区治理数字化。本项目**依据**上级主管部门\n",
+      "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告",
+      "supports_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e2",
+      "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+      "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+      "supports_fields": [
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e3",
+      "content": "的专项规划批复，**背景**是园区管理长期依赖人工台账、效率低下。\n\n## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n",
+      "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 一、建设背景与依据",
+      "supports_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e4",
+      "content": "## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n底座、统一门户、统一运维；对实时监测与告警的**需求**迫切。\n\n",
+      "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 二、现状问题与需求分析",
+      "supports_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e5",
+      "content": "# 示范市智慧园区管理平台 需求清单\n\n> （合成示例，非真实数据）\n",
+      "source": "《需求清单》· 示范市智慧园区管理平台 需求清单",
+      "supports_fields": [
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e6",
+      "content": "二、实施条件与边界\n\n**实施条件**：园区提供机房与网络环境；**实施边界**：本方案不含第三方系统的内部改造。**实施**前投标方将核查现场**条件**，不足处由投标方承担补充。",
+      "source": "《建设方案》· 二、实施条件与边界",
+      "supports_fields": [
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e7",
+      "content": "示范市智慧园区管理平台 建设方案\n\n（合成示例，非真实数据）\n",
+      "source": "《建设方案》· 正文",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e8",
+      "content": "# 示范市智慧园区管理平台 报价与工期\n\n> （合成示例，报价与工期为演示占位）\n",
+      "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e9",
+      "content": "# 示范市智慧园区管理平台 可行性研究报告\n\n> （合成示例，非真实数据）\n",
+      "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e10",
+      "content": "## 三、建设目标\n\n**目标**一：建成统一的园区管理平台；**目标**二：打通不少于三个业务系统的数据接口；\n**目标**三：形成可持续运营机制。\n",
+      "source": "《可行性研究报告》· 示范市智慧园区管理平台 可行性研究报告 > 三、建设目标",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e11",
+      "content": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+      "source": "《需求清单》· 示范市智慧园区管理平台 需求清单 > 建设范围与对象",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e12",
+      "content": "| 费用条目 | 估算（万元） |\n|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n",
+      "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e13",
+      "content": "|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n工期：合同签订后六个月。\n",
+      "source": "《报价单》· 示范市智慧园区管理平台 报价与工期",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    }
+  ],
+  "missing_fields": [],
+  "constraints": [
+    "证据优先：每个陈述事实的段落必须绑定至少一个 span_ref，且只能引用本任务包 evidence[] 里的条目。",
+    "不得引入任务包外的任何材料、事实、数字、案例或引用——包外即视为编造。",
+    "缺证据的字段（见 missing_fields）必须留 `【待补充：字段说明】` 占位，严禁用训练数据或常识补全。",
+    "不脑补、不扩展用户字面输入、不为“完整性”自行加配套内容；宁缺毋滥。",
+    "不虚构业绩/客户/金额/证书等硬数据；材料没有就留占位。",
+    "履约前置条件（配套/环境/第三方协作）不写免责句式，写成投标方主动核查+承担。",
+    "正文用自然语言，不出现工具链内部字段名或标识符。"
+  ],
+  "response_format": {
+    "paragraphs": "每段 {text, span_refs}；陈述事实的段落必须绑定至少一个包内 span_ref",
+    "placeholder": "无证据字段写 `【待补充：字段说明】`，该段 span_refs 留空",
+    "limited_note": "gate=limited 时必填，标注证据不足之处；否则可为 null"
+  },
+  "limited_note_required": false,
+  "injection_warnings": []
+}

@@ -1,0 +1,224 @@
+{
+  "section_id": "02",
+  "section_title": "项目理解",
+  "gate": "allow",
+  "gate_meaning": "证据充分，允许正常撰写",
+  "writing": {
+    "structure": [
+      "项目背景与建设依据",
+      "现状问题与需求分析"
+    ],
+    "tone": "以甲方材料为准复述背景与现状，不引申、不评价",
+    "length_basis": "中等，覆盖背景与现状两块"
+  },
+  "project_params": {
+    "project_name": "示范市政务数据中台项目",
+    "client_name": "示范市大数据局（虚构）",
+    "industry_domain": "数字政府",
+    "project_number": null,
+    "budget": "260万元",
+    "duration": "8个月"
+  },
+  "evidence": [
+    {
+      "span_ref": "e1",
+      "content": "> （完全合成示例，非真实数据；本套 demo 用于演示\"材料齐备 → 无占位 DELIVERABLE\"。）\n\n## 一、建设背景与依据\n\n本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明",
+      "supports_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e2",
+      "content": "## 一、建设背景与依据\n\n本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n数字经济与数据要素**政策**，明确要求推进政务数据汇聚共享。上述政策**背景**与本项目直接相关：\n本项目正是落实该专项规划批复中\"建设统一政务数据中台\"一条的具体工程，**与当前项目的关系**为\n直接承接、逐条对应。\n\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明 > 一、建设背景与依据",
+      "supports_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e3",
+      "content": "\n**实施前提**：市政务云已提供计算与存储资源、各部门已完成数据资产梳理；\n**系统对接条件**：各源系统需开放标准接口或库表同步权限；\n**组织保障**：由市大数据局牵头、各委办局配合，**部署环境**为政务云内网；\n**能力限制与适用边界**：本方案不含涉密数据处理、不含跨专网数据交换。\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 三、实施条件与边界",
+      "supports_fields": [
+        "basis_reference_or_background"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e4",
+      "content": "## 一、建设范围与对象\n\n本项目**建设对象**为示范市大数据局及全市各委办局的政务数据系统，**服务对象**为市、区两级\n政务部门。**范围**覆盖数据归集、共享、质量治理与运营监测四类业务，**系统范围**为市级政务云内\n的政务数据平台，**边界**为不含涉密专网系统、不含非政务数据。\n\n## 二、建设目标\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 一、建设范围与对象",
+      "supports_fields": [
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e5",
+      "content": "\n**预期成效**为：建成统一政务数据中台后，跨部门数据共享由人工报送转为实时接口交换、数据质量\n经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 四、预期成效",
+      "supports_fields": [
+        "relationship_to_current_project"
+      ],
+      "slot_id": "background_and_basis"
+    },
+    {
+      "span_ref": "e6",
+      "content": "直接承接、逐条对应。\n\n## 二、现状问题与需求分析\n\n**现状**：全市政务数据分散在 20 余个部门的独立系统中，各系统独立建设、数据不通，存在明显的\n信息孤岛**问题**。数据口径不一致、共享靠人工报送，**受影响的对象**是市大数据局、各委办局的\n业务处室与一线经办人员。\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明 > 一、建设背景与依据",
+      "supports_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e7",
+      "content": "# 示范市政务数据中台项目 依据与现状说明\n\n> （完全合成示例，非真实数据；本套 demo 用于演示\"材料齐备 → 无占位 DELIVERABLE\"。）\n\n## 一、建设背景与依据\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明",
+      "supports_fields": [
+        "current_state",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e8",
+      "content": "## 一、建设背景与依据\n\n本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n数字经济与数据要素**政策**，明确要求推进政务数据汇聚共享。上述政策**背景**与本项目直接相关：\n本项目正是落实该专项规划批复中\"建设统一政务数据中台\"一条的具体工程，**与当前项目的关系**为\n直接承接、逐条对应。\n\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明 > 一、建设背景与依据",
+      "supports_fields": [
+        "current_state",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e9",
+      "content": "\n**目标**一：建成统一政务数据中台，达到\"一次归集、多方共享\"的**预期状态**；\n**目标**二：数据共享时效由人工报送转为接口实时交换，与\"共享审批链路长\"**现状问题**直接**对应**；\n**目标**三：形成可持续运营机制，目标**可检查**——以是否建成统一接口、是否上线质量规则库为判断依据。\n\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 二、建设目标",
+      "supports_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e10",
+      "content": "\n- **项目 / 客户 / 实施对象**：邻市大数据管理局\"政务数据共享平台\"**项目**，实施对象为该局及所属各委办局。\n- **实际实施内容**：完成多部门数据归集、建成统一共享接口、部署数据质量治理规则库，覆盖归集、\n  共享、监测全链路。\n- **实施 / 上线 / 验收 / 应用状态**：该项目**已上线运行**，并**通过第三方验收**，目前处于**稳定应用**\n",
+      "source": "《同类项目实施案例》· 同类项目实施案例汇编 > 案例一：邻市政务数据共享平台",
+      "supports_fields": [
+        "current_state",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e11",
+      "content": "各**建设内容**与前述需求逐条**对应**（alignment）：\n\n- 统一数据归集通道 **对应**\"统一归集通道缺失\"需求，直接**满足目标**\"统一数据归集\"；\n- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 二、建设内容与需求/目标的对应关系",
+      "supports_fields": [
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e12",
+      "content": "业务处室与一线经办人员。\n\n主要**需求**为：统一数据归集、统一共享接口、统一质量治理；对跨部门实时数据交换与质量监测的\n**需求**尤为迫切。**具体问题**集中在三处：一是缺乏统一归集通道，二是无质量校验形成脏数据，\n三是共享审批链路长、时效差。\n",
+      "source": "《项目依据与现状说明》· 示范市政务数据中台项目 依据与现状说明 > 二、现状问题与需求分析",
+      "supports_fields": [
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e13",
+      "content": "- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n每一项**能力**都与某条**需求或目标**建立了明确对应关系，无悬空能力。\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 二、建设内容与需求/目标的对应关系",
+      "supports_fields": [
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e14",
+      "content": "# 示范市政务数据中台项目 建设范围、目标、实施条件与成效\n\n> （完全合成示例，非真实数据。）\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e15",
+      "content": "# 示范市政务数据中台项目 技术方案与能力说明\n\n> （完全合成示例，非真实数据。）\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e16",
+      "content": "- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n- **模块**四：运营监测中心——提供实时监测与告警**功能**。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e17",
+      "content": "## 一、总体建设内容与能力\n\n平台**建设内容**包括四大模块：统一数据归集通道、数据质量治理引擎、共享交换服务网关、运营监测\n中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e18",
+      "content": "中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    },
+    {
+      "span_ref": "e19",
+      "content": "经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n共享服务是否稳定运行为准，可逐项核对。\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 四、预期成效",
+      "supports_fields": [
+        "affected_subject_business_or_process"
+      ],
+      "slot_id": "current_state_and_needs"
+    }
+  ],
+  "missing_fields": [],
+  "constraints": [
+    "证据优先：每个陈述事实的段落必须绑定至少一个 span_ref，且只能引用本任务包 evidence[] 里的条目。",
+    "不得引入任务包外的任何材料、事实、数字、案例或引用——包外即视为编造。",
+    "缺证据的字段（见 missing_fields）必须留 `【待补充：字段说明】` 占位，严禁用训练数据或常识补全。",
+    "不脑补、不扩展用户字面输入、不为“完整性”自行加配套内容；宁缺毋滥。",
+    "不虚构业绩/客户/金额/证书等硬数据；材料没有就留占位。",
+    "履约前置条件（配套/环境/第三方协作）不写免责句式，写成投标方主动核查+承担。",
+    "正文用自然语言，不出现工具链内部字段名或标识符。"
+  ],
+  "response_format": {
+    "paragraphs": "每段 {text, span_refs}；陈述事实的段落必须绑定至少一个包内 span_ref",
+    "placeholder": "无证据字段写 `【待补充：字段说明】`，该段 span_refs 留空",
+    "limited_note": "gate=limited 时必填，标注证据不足之处；否则可为 null"
+  },
+  "limited_note_required": false,
+  "injection_warnings": []
+}

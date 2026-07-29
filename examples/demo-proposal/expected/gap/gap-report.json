@@ -1,0 +1,986 @@
+{
+  "contract_id": "solution_material_completeness_v1",
+  "contract_version": "1.0",
+  "status": "incomplete",
+  "ready": false,
+  "slots": [
+    {
+      "slot_id": "background_and_basis",
+      "slot_name": "背景与依据",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-ecd7e150976f6d630797ad8477b8db35215c9ca287246817d3a5d7f5fb758f64",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "basis_reference_or_background",
+          "covered": true,
+          "evidence_ids": [
+            "ev-ecd7e150976f6d630797ad8477b8db35215c9ca287246817d3a5d7f5fb758f64"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "relationship_to_current_project",
+          "covered": true,
+          "evidence_ids": [
+            "ev-ecd7e150976f6d630797ad8477b8db35215c9ca287246817d3a5d7f5fb758f64",
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充适用的政策、项目要求或上位文件原文，并说明其与当前项目建设的直接关系。"
+    },
+    {
+      "slot_id": "current_state_and_needs",
+      "slot_name": "现状问题与需求",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "current_state",
+          "covered": true,
+          "evidence_ids": [
+            "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+            "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "specific_problem_or_need",
+          "covered": true,
+          "evidence_ids": [
+            "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+            "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+            "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+            "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "affected_subject_business_or_process",
+          "covered": true,
+          "evidence_ids": [
+            "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+            "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+            "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+            "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+            "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+            "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+            "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+            "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+            "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+            "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充当前业务或系统现状、具体问题及受影响对象或环节的事实材料。"
+    },
+    {
+      "slot_id": "scope_and_subjects",
+      "slot_name": "建设对象与范围",
+      "required": true,
+      "status": "weak",
+      "evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "construction_or_service_subject",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        },
+        {
+          "field_id": "business_geographic_organizational_or_system_scope",
+          "covered": true,
+          "evidence_ids": [
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "basic_boundary",
+          "covered": true,
+          "evidence_ids": [
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+            "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "business_geographic_organizational_or_system_scope",
+        "basic_boundary"
+      ],
+      "missing_fields": [
+        "construction_or_service_subject"
+      ],
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD"
+      ],
+      "reason": "证据相关但不足以完整满足 Slot；未覆盖字段：construction_or_service_subject。",
+      "conflicts": [],
+      "material_request": "补充建设或服务对象，以及业务、地域、组织或系统范围和明确边界。"
+    },
+    {
+      "slot_id": "objectives",
+      "slot_name": "建设目标",
+      "required": true,
+      "status": "weak",
+      "evidence_ids": [
+        "ev-22c91e0d5e8797d02a4f9452e940987da620c4dc88e51d0ca2b7e36517ad4f35",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "expected_target_state",
+          "covered": true,
+          "evidence_ids": [
+            "ev-22c91e0d5e8797d02a4f9452e940987da620c4dc88e51d0ca2b7e36517ad4f35",
+            "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "verifiability_or_alignment_with_current_problem",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        }
+      ],
+      "covered_fields": [
+        "expected_target_state"
+      ],
+      "missing_fields": [
+        "verifiability_or_alignment_with_current_problem"
+      ],
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD"
+      ],
+      "reason": "证据相关但不足以完整满足 Slot；未覆盖字段：verifiability_or_alignment_with_current_problem。",
+      "conflicts": [],
+      "material_request": "补充可检查的建设目标，并说明目标与现状问题或需求的对应关系。"
+    },
+    {
+      "slot_id": "solution_content_and_capabilities",
+      "slot_name": "建设内容与能力",
+      "required": true,
+      "status": "weak",
+      "evidence_ids": [
+        "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "concrete_content_module_function_or_capability",
+          "covered": true,
+          "evidence_ids": [
+            "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "alignment_with_need_or_objective",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        }
+      ],
+      "covered_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "missing_fields": [
+        "alignment_with_need_or_objective"
+      ],
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD"
+      ],
+      "reason": "证据相关但不足以完整满足 Slot；未覆盖字段：alignment_with_need_or_objective。",
+      "conflicts": [],
+      "material_request": "补充具体建设模块、功能或能力说明，以及它们对应的需求或建设目标。"
+    },
+    {
+      "slot_id": "implementation_conditions_and_boundaries",
+      "slot_name": "实施条件与边界",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-bd8a7369ebd52b7aba9885df7398c2ea4b12e22e6dd0b6a6863ada55ac83411d",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "at_least_one_explicit_implementation_condition_or_boundary",
+          "covered": true,
+          "evidence_ids": [
+            "ev-bd8a7369ebd52b7aba9885df7398c2ea4b12e22e6dd0b6a6863ada55ac83411d",
+            "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+            "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "at_least_one_explicit_implementation_condition_or_boundary"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充数据和系统对接条件、部署环境、组织保障、实施前提、能力限制或适用边界中的至少一项。"
+    },
+    {
+      "slot_id": "reference_cases_and_proof",
+      "slot_name": "项目案例与证明",
+      "required": true,
+      "status": "missing",
+      "evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "project_customer_or_implementation_subject",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        },
+        {
+          "field_id": "actual_implementation_content",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        },
+        {
+          "field_id": "implementation_launch_acceptance_or_usage_status",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        }
+      ],
+      "covered_fields": [],
+      "missing_fields": [
+        "project_customer_or_implementation_subject",
+        "actual_implementation_content",
+        "implementation_launch_acceptance_or_usage_status"
+      ],
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD"
+      ],
+      "reason": "现有证据未覆盖任何必要字段，缺少：project_customer_or_implementation_subject、actual_implementation_content、implementation_launch_acceptance_or_usage_status。",
+      "conflicts": [],
+      "material_request": "补充可核实的项目或客户、实际实施内容，以及上线、验收或应用状态证明。"
+    },
+    {
+      "slot_id": "outcomes_and_metrics",
+      "slot_name": "建设成效与指标",
+      "required": true,
+      "status": "weak",
+      "evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "expected_or_actual_outcome",
+          "covered": false,
+          "evidence_ids": [],
+          "reason": "未检测到可确定的字段覆盖信号"
+        },
+        {
+          "field_id": "outcome_subject_or_evaluation_basis",
+          "covered": true,
+          "evidence_ids": [
+            "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+            "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+            "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+            "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+            "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "expected_or_actual_nature",
+          "covered": true,
+          "evidence_ids": [
+            "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "outcome_subject_or_evaluation_basis",
+        "expected_or_actual_nature"
+      ],
+      "missing_fields": [
+        "expected_or_actual_outcome"
+      ],
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD"
+      ],
+      "reason": "证据相关但不足以完整满足 Slot；未覆盖字段：expected_or_actual_outcome。",
+      "conflicts": [],
+      "material_request": "补充成效作用对象、指标口径和来源，并明确该成效属于预期目标还是实际结果。"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev-ecd7e150976f6d630797ad8477b8db35215c9ca287246817d3a5d7f5fb758f64",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "> （合成示例，非真实数据）\n\n## 一、建设背景与依据\n\n近年国家出台数字经济与智慧城市**政策**，要求推进园区治理数字化。本项目**依据**上级主管部门\n",
+      "start_char": 23,
+      "end_char": 103,
+      "start_line": 3,
+      "end_line": 7,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+      "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+      "text": "示范市智慧园区管理平台 建设方案\n\n（合成示例，非真实数据）\n",
+      "start_char": 0,
+      "end_char": 31,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+      "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+      "text": "# 示范市智慧园区管理平台 需求清单\n\n> （合成示例，非真实数据）\n",
+      "start_char": 0,
+      "end_char": 35,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+      "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+      "text": "# 示范市智慧园区管理平台 报价与工期\n\n> （合成示例，报价与工期为演示占位）\n",
+      "start_char": 0,
+      "end_char": 41,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "# 示范市智慧园区管理平台 可行性研究报告\n\n> （合成示例，非真实数据）\n",
+      "start_char": 0,
+      "end_char": 38,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n底座、统一门户、统一运维；对实时监测与告警的**需求**迫切。\n\n",
+      "start_char": 138,
+      "end_char": 239,
+      "start_line": 10,
+      "end_line": 14,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "## 三、建设目标\n\n**目标**一：建成统一的园区管理平台；**目标**二：打通不少于三个业务系统的数据接口；\n**目标**三：形成可持续运营机制。\n",
+      "start_char": 239,
+      "end_char": 315,
+      "start_line": 15,
+      "end_line": 18,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+      "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+      "text": "| 费用条目 | 估算（万元） |\n|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n",
+      "start_char": 42,
+      "end_char": 101,
+      "start_line": 5,
+      "end_line": 9,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+      "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+      "text": "|---|---|\n| 平台软件 | 120 |\n| 硬件与集成 | 60 |\n\n工期：合同签订后六个月。\n",
+      "start_char": 60,
+      "end_char": 114,
+      "start_line": 6,
+      "end_line": 10,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+      "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+      "text": "## 建设范围与对象\n\n本项目**范围**覆盖园区内能源、安防、门禁三类子系统；建设**对象**为园区内的设备与子系统。\n**范围**边界：不含园区外部市政系统。\n",
+      "start_char": 36,
+      "end_char": 118,
+      "start_line": 5,
+      "end_line": 8,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+      "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+      "text": "二、实施条件与边界\n\n**实施条件**：园区提供机房与网络环境；**实施边界**：本方案不含第三方系统的内部改造。**实施**前投标方将核查现场**条件**，不足处由投标方承担补充。",
+      "start_char": 128,
+      "end_char": 219,
+      "start_line": 9,
+      "end_line": 11,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "的专项规划批复，**背景**是园区管理长期依赖人工台账、效率低下。\n\n## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n",
+      "start_char": 103,
+      "end_char": 206,
+      "start_line": 8,
+      "end_line": 12,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-22c91e0d5e8797d02a4f9452e940987da620c4dc88e51d0ca2b7e36517ad4f35",
+      "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+      "text": "底座、统一门户、统一运维；对实时监测与告警的**需求**迫切。\n\n## 三、建设目标\n\n**目标**一：建成统一的园区管理平台；**目标**二：打通不少于三个业务系统的数据接口；\n",
+      "start_char": 206,
+      "end_char": 296,
+      "start_line": 13,
+      "end_line": 17,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+      "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+      "text": "（合成示例，非真实数据）\n\n一、建设内容与能力\n\n平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n",
+      "start_char": 18,
+      "end_char": 127,
+      "start_line": 3,
+      "end_line": 7,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-bd8a7369ebd52b7aba9885df7398c2ea4b12e22e6dd0b6a6863ada55ac83411d",
+      "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+      "text": "平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n\n二、实施条件与边界\n\n**实施条件**：园区提供机房与网络环境；**实施边界**：本方案不含第三方系统的内部改造。**实施**前投标方将核查现场**条件**，不足处由投标方承担补充。",
+      "start_char": 43,
+      "end_char": 219,
+      "start_line": 7,
+      "end_line": 11,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "slot_id": "reference_cases_and_proof",
+      "slot_name": "项目案例与证明",
+      "action": "request_material",
+      "missing_fields": [
+        "project_customer_or_implementation_subject",
+        "actual_implementation_content",
+        "implementation_launch_acceptance_or_usage_status"
+      ],
+      "existing_evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+      ],
+      "description": "未找到满足要求的材料。补充可核实的项目或客户、实际实施内容，以及上线、验收或应用状态证明。",
+      "priority": 2
+    },
+    {
+      "slot_id": "scope_and_subjects",
+      "slot_name": "建设对象与范围",
+      "action": "request_material",
+      "missing_fields": [
+        "construction_or_service_subject"
+      ],
+      "existing_evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d"
+      ],
+      "description": "已发现相关材料，但仍有必需字段未覆盖。补充建设或服务对象，以及业务、地域、组织或系统范围和明确边界。",
+      "priority": 3
+    },
+    {
+      "slot_id": "objectives",
+      "slot_name": "建设目标",
+      "action": "request_material",
+      "missing_fields": [
+        "verifiability_or_alignment_with_current_problem"
+      ],
+      "existing_evidence_ids": [
+        "ev-22c91e0d5e8797d02a4f9452e940987da620c4dc88e51d0ca2b7e36517ad4f35",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "description": "已发现相关材料，但仍有必需字段未覆盖。补充可检查的建设目标，并说明目标与现状问题或需求的对应关系。",
+      "priority": 3
+    },
+    {
+      "slot_id": "solution_content_and_capabilities",
+      "slot_name": "建设内容与能力",
+      "action": "request_material",
+      "missing_fields": [
+        "alignment_with_need_or_objective"
+      ],
+      "existing_evidence_ids": [
+        "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a"
+      ],
+      "description": "已发现相关材料，但仍有必需字段未覆盖。补充具体建设模块、功能或能力说明，以及它们对应的需求或建设目标。",
+      "priority": 3
+    },
+    {
+      "slot_id": "outcomes_and_metrics",
+      "slot_name": "建设成效与指标",
+      "action": "request_material",
+      "missing_fields": [
+        "expected_or_actual_outcome"
+      ],
+      "existing_evidence_ids": [
+        "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+        "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+        "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+        "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+        "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+        "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+        "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+        "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+        "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+        "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c"
+      ],
+      "description": "已发现相关材料，但仍有必需字段未覆盖。补充成效作用对象、指标口径和来源，并明确该成效属于预期目标还是实际结果。",
+      "priority": 3
+    }
+  ],
+  "trace": {
+    "contract_id": "solution_material_completeness_v1",
+    "document_ids": [
+      "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+      "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+      "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+      "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e"
+    ],
+    "document_count": 4,
+    "vector_index_fingerprint": "62b13effeed5e77df29d59ee971768b3fde24051a0c33901bef8d8f8630cff1e",
+    "max_chars": 800,
+    "top_k_per_slot": 8,
+    "context_lines": 2,
+    "max_span_chars": 1200,
+    "max_results_per_slot": 20,
+    "per_slot": {
+      "background_and_basis": {
+        "vector_candidate_count": 4,
+        "anchor_count": 15,
+        "exact_span_count": 11,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 11,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "current_state_and_needs": {
+        "vector_candidate_count": 4,
+        "anchor_count": 16,
+        "exact_span_count": 11,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 11,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "scope_and_subjects": {
+        "vector_candidate_count": 4,
+        "anchor_count": 16,
+        "exact_span_count": 10,
+        "fallback_used": false,
+        "verification_status": "weak",
+        "initial_evidence_count": 10,
+        "initial_verification_status": "weak",
+        "initial_missing_fields": [
+          "construction_or_service_subject"
+        ],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "weak",
+        "final_missing_fields": [
+          "construction_or_service_subject"
+        ],
+        "guard_failure_reasons": []
+      },
+      "objectives": {
+        "vector_candidate_count": 4,
+        "anchor_count": 15,
+        "exact_span_count": 11,
+        "fallback_used": false,
+        "verification_status": "weak",
+        "initial_evidence_count": 11,
+        "initial_verification_status": "weak",
+        "initial_missing_fields": [
+          "verifiability_or_alignment_with_current_problem"
+        ],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "weak",
+        "final_missing_fields": [
+          "verifiability_or_alignment_with_current_problem"
+        ],
+        "guard_failure_reasons": []
+      },
+      "solution_content_and_capabilities": {
+        "vector_candidate_count": 4,
+        "anchor_count": 15,
+        "exact_span_count": 11,
+        "fallback_used": false,
+        "verification_status": "weak",
+        "initial_evidence_count": 11,
+        "initial_verification_status": "weak",
+        "initial_missing_fields": [
+          "alignment_with_need_or_objective"
+        ],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "weak",
+        "final_missing_fields": [
+          "alignment_with_need_or_objective"
+        ],
+        "guard_failure_reasons": []
+      },
+      "implementation_conditions_and_boundaries": {
+        "vector_candidate_count": 4,
+        "anchor_count": 13,
+        "exact_span_count": 10,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 10,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "reference_cases_and_proof": {
+        "vector_candidate_count": 4,
+        "anchor_count": 17,
+        "exact_span_count": 10,
+        "fallback_used": false,
+        "verification_status": "missing",
+        "initial_evidence_count": 10,
+        "initial_verification_status": "missing",
+        "initial_missing_fields": [
+          "actual_implementation_content",
+          "implementation_launch_acceptance_or_usage_status",
+          "project_customer_or_implementation_subject"
+        ],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "missing",
+        "final_missing_fields": [
+          "actual_implementation_content",
+          "implementation_launch_acceptance_or_usage_status",
+          "project_customer_or_implementation_subject"
+        ],
+        "guard_failure_reasons": []
+      },
+      "outcomes_and_metrics": {
+        "vector_candidate_count": 4,
+        "anchor_count": 16,
+        "exact_span_count": 10,
+        "fallback_used": false,
+        "verification_status": "weak",
+        "initial_evidence_count": 10,
+        "initial_verification_status": "weak",
+        "initial_missing_fields": [
+          "expected_or_actual_outcome"
+        ],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "weak",
+        "final_missing_fields": [
+          "expected_or_actual_outcome"
+        ],
+        "guard_failure_reasons": []
+      }
+    }
+  }
+}

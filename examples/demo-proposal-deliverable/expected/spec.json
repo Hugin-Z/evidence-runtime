@@ -1,0 +1,15 @@
+{
+  "spec_version": "p-b-projectspec-v1",
+  "doc_type": "proposal-document",
+  "project_name": "示范市政务数据中台项目",
+  "client_name": "示范市大数据局（虚构）",
+  "industry_domain": "数字政府",
+  "section_scope": "all",
+  "section_ids": [],
+  "project_id": "demo-deliverable",
+  "source_types": null,
+  "project_number": null,
+  "budget": "260万元",
+  "duration": "8个月",
+  "project_nature": "platform"
+}

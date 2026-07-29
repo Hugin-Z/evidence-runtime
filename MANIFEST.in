@@ -1,0 +1,11 @@
+prune tests
+prune eval
+prune examples
+prune docs
+prune .github
+prune .internal
+
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .DS_Store
+global-exclude Thumbs.db

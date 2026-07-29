@@ -1,0 +1,1255 @@
+{
+  "contract_id": "solution_material_completeness_v1",
+  "contract_version": "1.0",
+  "status": "complete",
+  "ready": true,
+  "slots": [
+    {
+      "slot_id": "background_and_basis",
+      "slot_name": "背景与依据",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-262083192ada7f47d83af8f64e40b92ff5bd6ba8a3be0cb3c5bcee1bdc3cc33f",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+        "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+        "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+        "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+        "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+        "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+        "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79",
+        "ev-d06acc83407fbeb39c360e5b3f64c21edaa55f6ec2a49d7e62958d9c8c25bce5"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "basis_reference_or_background",
+          "covered": true,
+          "evidence_ids": [
+            "ev-262083192ada7f47d83af8f64e40b92ff5bd6ba8a3be0cb3c5bcee1bdc3cc33f",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "relationship_to_current_project",
+          "covered": true,
+          "evidence_ids": [
+            "ev-262083192ada7f47d83af8f64e40b92ff5bd6ba8a3be0cb3c5bcee1bdc3cc33f",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充适用的政策、项目要求或上位文件原文，并说明其与当前项目建设的直接关系。"
+    },
+    {
+      "slot_id": "current_state_and_needs",
+      "slot_name": "现状问题与需求",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-9947629a943b692b4521a7da8515f7e263624dd92bae2ac5bbcedb35ab615f48",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+        "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+        "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+        "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+        "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+        "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+        "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+        "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+        "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "current_state",
+          "covered": true,
+          "evidence_ids": [
+            "ev-9947629a943b692b4521a7da8515f7e263624dd92bae2ac5bbcedb35ab615f48",
+            "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+            "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "specific_problem_or_need",
+          "covered": true,
+          "evidence_ids": [
+            "ev-9947629a943b692b4521a7da8515f7e263624dd92bae2ac5bbcedb35ab615f48",
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+            "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "affected_subject_business_or_process",
+          "covered": true,
+          "evidence_ids": [
+            "ev-9947629a943b692b4521a7da8515f7e263624dd92bae2ac5bbcedb35ab615f48",
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+            "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+            "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+            "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+            "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+            "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+            "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充当前业务或系统现状、具体问题及受影响对象或环节的事实材料。"
+    },
+    {
+      "slot_id": "scope_and_subjects",
+      "slot_name": "建设对象与范围",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+        "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+        "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+        "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+        "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+        "ev-c52487c644c27e2c18dfdc22377a63c8c8ba63e7ad3e675c376fcf4773a5a6dc",
+        "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+        "ev-6abbdc3d900b9f3d8d5be39771ee53b2b477ce85998fe57dc8102dc23407207b",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-fcc63cf4475405936e3291f84e0f482c4098bc73edf0e0c876e1cc413507d844",
+        "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "construction_or_service_subject",
+          "covered": true,
+          "evidence_ids": [
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "business_geographic_organizational_or_system_scope",
+          "covered": true,
+          "evidence_ids": [
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+            "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+            "ev-c52487c644c27e2c18dfdc22377a63c8c8ba63e7ad3e675c376fcf4773a5a6dc",
+            "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+            "ev-6abbdc3d900b9f3d8d5be39771ee53b2b477ce85998fe57dc8102dc23407207b",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "basic_boundary",
+          "covered": true,
+          "evidence_ids": [
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+            "ev-6abbdc3d900b9f3d8d5be39771ee53b2b477ce85998fe57dc8102dc23407207b"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "construction_or_service_subject",
+        "business_geographic_organizational_or_system_scope",
+        "basic_boundary"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充建设或服务对象，以及业务、地域、组织或系统范围和明确边界。"
+    },
+    {
+      "slot_id": "objectives",
+      "slot_name": "建设目标",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-ce6ecc964533a6970b871b85a62f19044cea05cc7edee668046de0ae30b10798",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+        "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+        "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+        "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+        "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+        "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+        "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+        "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+        "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+        "ev-befc517f4f049bf7d453614c497773af48accb9e4305780d48d61cebd28c75b3"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "expected_target_state",
+          "covered": true,
+          "evidence_ids": [
+            "ev-ce6ecc964533a6970b871b85a62f19044cea05cc7edee668046de0ae30b10798",
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+            "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+            "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+            "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "verifiability_or_alignment_with_current_problem",
+          "covered": true,
+          "evidence_ids": [
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "expected_target_state",
+        "verifiability_or_alignment_with_current_problem"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充可检查的建设目标，并说明目标与现状问题或需求的对应关系。"
+    },
+    {
+      "slot_id": "solution_content_and_capabilities",
+      "slot_name": "建设内容与能力",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-708043d811e1741c7cff805e4b47e853d7bed2bcb16c0022024ac6c9cbeedecd",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+        "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+        "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+        "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+        "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+        "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+        "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+        "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+        "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+        "ev-befc517f4f049bf7d453614c497773af48accb9e4305780d48d61cebd28c75b3"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "concrete_content_module_function_or_capability",
+          "covered": true,
+          "evidence_ids": [
+            "ev-708043d811e1741c7cff805e4b47e853d7bed2bcb16c0022024ac6c9cbeedecd",
+            "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+            "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+            "ev-befc517f4f049bf7d453614c497773af48accb9e4305780d48d61cebd28c75b3"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "alignment_with_need_or_objective",
+          "covered": true,
+          "evidence_ids": [
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "concrete_content_module_function_or_capability",
+        "alignment_with_need_or_objective"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充具体建设模块、功能或能力说明，以及它们对应的需求或建设目标。"
+    },
+    {
+      "slot_id": "implementation_conditions_and_boundaries",
+      "slot_name": "实施条件与边界",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-5eeae04b08f9f5ae774d2639e020e57302e2d04dd9cf4f8b1c35ba839e91abba",
+        "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+        "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+        "ev-2f8bdaf845cac4b4207e6c3801595d5c57eec48a2dd0c142fb474284284de787",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-23e6428b622af333e5d26f13514808edb986e0bde671325d05af7a3678f860d8",
+        "ev-34c2b1bea33f1dcf60061510165ed74829746e6a9f2a0f9ca7153440935f613d",
+        "ev-fcc63cf4475405936e3291f84e0f482c4098bc73edf0e0c876e1cc413507d844",
+        "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c",
+        "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+        "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+        "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+        "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+        "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+        "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+        "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+        "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "at_least_one_explicit_implementation_condition_or_boundary",
+          "covered": true,
+          "evidence_ids": [
+            "ev-5eeae04b08f9f5ae774d2639e020e57302e2d04dd9cf4f8b1c35ba839e91abba",
+            "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+            "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+            "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+            "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+            "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+            "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+            "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "at_least_one_explicit_implementation_condition_or_boundary"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充数据和系统对接条件、部署环境、组织保障、实施前提、能力限制或适用边界中的至少一项。"
+    },
+    {
+      "slot_id": "reference_cases_and_proof",
+      "slot_name": "项目案例与证明",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962",
+        "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c",
+        "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+        "ev-c52487c644c27e2c18dfdc22377a63c8c8ba63e7ad3e675c376fcf4773a5a6dc",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-fcc63cf4475405936e3291f84e0f482c4098bc73edf0e0c876e1cc413507d844",
+        "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+        "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+        "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+        "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "project_customer_or_implementation_subject",
+          "covered": true,
+          "evidence_ids": [
+            "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962",
+            "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c",
+            "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-c52487c644c27e2c18dfdc22377a63c8c8ba63e7ad3e675c376fcf4773a5a6dc",
+            "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+            "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-fcc63cf4475405936e3291f84e0f482c4098bc73edf0e0c876e1cc413507d844",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+            "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "actual_implementation_content",
+          "covered": true,
+          "evidence_ids": [
+            "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962",
+            "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "implementation_launch_acceptance_or_usage_status",
+          "covered": true,
+          "evidence_ids": [
+            "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "project_customer_or_implementation_subject",
+        "actual_implementation_content",
+        "implementation_launch_acceptance_or_usage_status"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充可核实的项目或客户、实际实施内容，以及上线、验收或应用状态证明。"
+    },
+    {
+      "slot_id": "outcomes_and_metrics",
+      "slot_name": "建设成效与指标",
+      "required": true,
+      "status": "filled",
+      "evidence_ids": [
+        "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+        "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+        "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+        "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+        "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+        "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+        "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+        "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+        "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79",
+        "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+        "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+        "ev-7196e0c185cba96745d84454088211a66fd4d4e9471dc0e83b03f2bfb524b24e"
+      ],
+      "field_coverage": [
+        {
+          "field_id": "expected_or_actual_outcome",
+          "covered": true,
+          "evidence_ids": [
+            "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "outcome_subject_or_evaluation_basis",
+          "covered": true,
+          "evidence_ids": [
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+            "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+            "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+            "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+            "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79",
+            "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+            "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+            "ev-7196e0c185cba96745d84454088211a66fd4d4e9471dc0e83b03f2bfb524b24e"
+          ],
+          "reason": null
+        },
+        {
+          "field_id": "expected_or_actual_nature",
+          "covered": true,
+          "evidence_ids": [
+            "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+            "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+            "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+            "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+            "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79"
+          ],
+          "reason": null
+        }
+      ],
+      "covered_fields": [
+        "expected_or_actual_outcome",
+        "outcome_subject_or_evaluation_basis",
+        "expected_or_actual_nature"
+      ],
+      "missing_fields": [],
+      "reason_codes": [],
+      "reason": "全部必要字段均有可定位证据覆盖，证据数量达标，且未检测到结构化冲突。",
+      "conflicts": [],
+      "material_request": "补充成效作用对象、指标口径和来源，并明确该成效属于预期目标还是实际结果。"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev-262083192ada7f47d83af8f64e40b92ff5bd6ba8a3be0cb3c5bcee1bdc3cc33f",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "> （完全合成示例，非真实数据；本套 demo 用于演示\"材料齐备 → 无占位 DELIVERABLE\"。）\n\n## 一、建设背景与依据\n\n本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n",
+      "start_char": 23,
+      "end_char": 145,
+      "start_line": 3,
+      "end_line": 7,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-48bdab0e52011737d52027b25c92259ed9935f7ab9322e3dc002db66a39f1b7a",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "# 示范市政务数据中台项目 建设范围、目标、实施条件与成效\n\n> （完全合成示例，非真实数据。）\n",
+      "start_char": 0,
+      "end_char": 49,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-c66a9af3d58de3a4216beb920d613421b22f267288a4248927b1901a859ef914",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "# 示范市政务数据中台项目 技术方案与能力说明\n\n> （完全合成示例，非真实数据。）\n",
+      "start_char": 0,
+      "end_char": 43,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-cf0c0310a89106e6d55fba154838622c8cb4dee5ed8c0d7b7c0600469e93b40c",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "# 示范市政务数据中台项目 依据与现状说明\n\n> （完全合成示例，非真实数据；本套 demo 用于演示\"材料齐备 → 无占位 DELIVERABLE\"。）\n\n## 一、建设背景与依据\n",
+      "start_char": 0,
+      "end_char": 92,
+      "start_line": 1,
+      "end_line": 5,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-0132c2e9cfa0ac3c4516db0c3385965cb895867f0256eb8b378893ea7771cfaa",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "## 一、建设背景与依据\n\n本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n数字经济与数据要素**政策**，明确要求推进政务数据汇聚共享。上述政策**背景**与本项目直接相关：\n本项目正是落实该专项规划批复中\"建设统一政务数据中台\"一条的具体工程，**与当前项目的关系**为\n直接承接、逐条对应。\n\n",
+      "start_char": 79,
+      "end_char": 257,
+      "start_line": 5,
+      "end_line": 11,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-721c9a776946a5a80b8016d3241ff4ca252115462131ea7d3b3d6ce2441afc6b",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "## 二、现状问题与需求分析\n\n**现状**：全市政务数据分散在 20 余个部门的独立系统中，各系统独立建设、数据不通，存在明显的\n信息孤岛**问题**。数据口径不一致、共享靠人工报送，**受影响的对象**是市大数据局、各委办局的\n业务处室与一线经办人员。\n",
+      "start_char": 257,
+      "end_char": 386,
+      "start_line": 12,
+      "end_line": 16,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-de07bdf1119c06d6ff1c58394e5b2277d65a795727d77b37d4b023953253ecad",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "## 一、建设范围与对象\n\n本项目**建设对象**为示范市大数据局及全市各委办局的政务数据系统，**服务对象**为市、区两级\n政务部门。**范围**覆盖数据归集、共享、质量治理与运营监测四类业务，**系统范围**为市级政务云内\n的政务数据平台，**边界**为不含涉密专网系统、不含非政务数据。\n\n## 二、建设目标\n",
+      "start_char": 50,
+      "end_char": 208,
+      "start_line": 5,
+      "end_line": 11,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-18f1f12d73d481d1f71f614f0de20ccfa539197ee7d286bfff5a7d495bd62344",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "## 二、建设目标\n\n**目标**一：建成统一政务数据中台，达到\"一次归集、多方共享\"的**预期状态**；\n**目标**二：数据共享时效由人工报送转为接口实时交换，与\"共享审批链路长\"**现状问题**直接**对应**；\n**目标**三：形成可持续运营机制，目标**可检查**——以是否建成统一接口、是否上线质量规则库为判断依据。\n\n",
+      "start_char": 198,
+      "end_char": 364,
+      "start_line": 11,
+      "end_line": 16,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-b5c2babef596b75e7ba16240237385c1653fcc7d0331190f5043834d73b7c417",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "- 统一数据归集通道 **对应**\"统一归集通道缺失\"需求，直接**满足目标**\"统一数据归集\"；\n- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n",
+      "start_char": 369,
+      "end_char": 568,
+      "start_line": 19,
+      "end_line": 23,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-7712940adb03712db23bdb58f091ef4f60131fd1fe8d25c2929f0a7e943397ee",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "主要**需求**为：统一数据归集、统一共享接口、统一质量治理；对跨部门实时数据交换与质量监测的\n**需求**尤为迫切。**具体问题**集中在三处：一是缺乏统一归集通道，二是无质量校验形成脏数据，\n三是共享审批链路长、时效差。\n",
+      "start_char": 387,
+      "end_char": 500,
+      "start_line": 18,
+      "end_line": 20,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-13bd3a617b60bd8f5de390c49851da90d7ac079759f4a599b1a92207722a62c0",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "\n**实施前提**：市政务云已提供计算与存储资源、各部门已完成数据资产梳理；\n**系统对接条件**：各源系统需开放标准接口或库表同步权限；\n**组织保障**：由市大数据局牵头、各委办局配合，**部署环境**为政务云内网；\n**能力限制与适用边界**：本方案不含涉密数据处理、不含跨专网数据交换。\n",
+      "start_char": 377,
+      "end_char": 525,
+      "start_line": 18,
+      "end_line": 22,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-f3bc1dbfc958285305253692b1f2adad7c93db998f61364b4841d2f7408cdd79",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "\n**预期成效**为：建成统一政务数据中台后，跨部门数据共享由人工报送转为实时接口交换、数据质量\n经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n",
+      "start_char": 536,
+      "end_char": 699,
+      "start_line": 25,
+      "end_line": 29,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-d06acc83407fbeb39c360e5b3f64c21edaa55f6ec2a49d7e62958d9c8c25bce5",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "# 同类项目实施案例汇编\n\n> （完全合成示例，非真实数据、非真实客户；仅用于演示\"案例材料齐备 → 无占位\"。）\n\n## 案例一：邻市政务数据共享平台\n",
+      "start_char": 0,
+      "end_char": 77,
+      "start_line": 1,
+      "end_line": 5,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-9947629a943b692b4521a7da8515f7e263624dd92bae2ac5bbcedb35ab615f48",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "直接承接、逐条对应。\n\n## 二、现状问题与需求分析\n\n**现状**：全市政务数据分散在 20 余个部门的独立系统中，各系统独立建设、数据不通，存在明显的\n信息孤岛**问题**。数据口径不一致、共享靠人工报送，**受影响的对象**是市大数据局、各委办局的\n业务处室与一线经办人员。\n",
+      "start_char": 245,
+      "end_char": 386,
+      "start_line": 10,
+      "end_line": 16,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-7c38ccde69646141cfd70c612f4de38ed0300755e97521c253bdc6134034078b",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n- **模块**四：运营监测中心——提供实时监测与告警**功能**。\n\n",
+      "start_char": 153,
+      "end_char": 311,
+      "start_line": 10,
+      "end_line": 14,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-4ebd18ab38d2c2f3a79a2e96e62aa6ef07a1fea509712338f2cad370f46f90f0",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "各**建设内容**与前述需求逐条**对应**（alignment）：\n\n- 统一数据归集通道 **对应**\"统一归集通道缺失\"需求，直接**满足目标**\"统一数据归集\"；\n- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n",
+      "start_char": 333,
+      "end_char": 568,
+      "start_line": 17,
+      "end_line": 23,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-ef64d652e096189eec0ba1e45205fbd0df00913a207cc7768b1385d33e7c3f48",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "## 一、总体建设内容与能力\n\n平台**建设内容**包括四大模块：统一数据归集通道、数据质量治理引擎、共享交换服务网关、运营监测\n中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n",
+      "start_char": 44,
+      "end_char": 153,
+      "start_line": 5,
+      "end_line": 9,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-5ba61357611b71247afb0b1bc18f4bb5adc007c4cc0859978e9f521decd4f4a6",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n",
+      "start_char": 109,
+      "end_char": 275,
+      "start_line": 8,
+      "end_line": 12,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-8cf44fde35fb8163d4f09952ff92801272539859bdff356bb0adcce930313840",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "业务处室与一线经办人员。\n\n主要**需求**为：统一数据归集、统一共享接口、统一质量治理；对跨部门实时数据交换与质量监测的\n**需求**尤为迫切。**具体问题**集中在三处：一是缺乏统一归集通道，二是无质量校验形成脏数据，\n三是共享审批链路长、时效差。\n",
+      "start_char": 373,
+      "end_char": 500,
+      "start_line": 16,
+      "end_line": 20,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-5238260ff1c030dcc3ad76a44691afbfcf8becac47fa83ea67297b71fe03ae09",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "\n**目标**一：建成统一政务数据中台，达到\"一次归集、多方共享\"的**预期状态**；\n**目标**二：数据共享时效由人工报送转为接口实时交换，与\"共享审批链路长\"**现状问题**直接**对应**；\n**目标**三：形成可持续运营机制，目标**可检查**——以是否建成统一接口、是否上线质量规则库为判断依据。\n\n",
+      "start_char": 208,
+      "end_char": 364,
+      "start_line": 12,
+      "end_line": 16,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-85bed3e389cd289fa1d9944f73358ca5b075f6b551fe604074d620fdf09c7586",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n共享服务是否稳定运行为准，可逐项核对。\n",
+      "start_char": 585,
+      "end_char": 719,
+      "start_line": 27,
+      "end_line": 30,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-bd7b624a8d9eacc9ea8a670151e5f4c633179890426274bf863970667c281465",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "\n- **项目 / 客户 / 实施对象**：邻市大数据管理局\"政务数据共享平台\"**项目**，实施对象为该局及所属各委办局。\n- **实际实施内容**：完成多部门数据归集、建成统一共享接口、部署数据质量治理规则库，覆盖归集、\n  共享、监测全链路。\n- **实施 / 上线 / 验收 / 应用状态**：该项目**已上线运行**，并**通过第三方验收**，目前处于**稳定应用**\n",
+      "start_char": 77,
+      "end_char": 267,
+      "start_line": 6,
+      "end_line": 10,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-b554fc28d2a004c92a26534c46f8b6015522896d33d2eb704af0ad13db819aa4",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n每一项**能力**都与某条**需求或目标**建立了明确对应关系，无悬空能力。\n",
+      "start_char": 419,
+      "end_char": 607,
+      "start_line": 20,
+      "end_line": 24,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-c52487c644c27e2c18dfdc22377a63c8c8ba63e7ad3e675c376fcf4773a5a6dc",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "## 四、预期成效\n\n**预期成效**为：建成统一政务数据中台后，跨部门数据共享由人工报送转为实时接口交换、数据质量\n经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n",
+      "start_char": 526,
+      "end_char": 699,
+      "start_line": 24,
+      "end_line": 29,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-147953f3581cffed6a2d36c6cdf8cc4ca3f5ea0cfee339931622583faf3d1649",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "# 同类项目实施案例汇编\n\n> （完全合成示例，非真实数据、非真实客户；仅用于演示\"案例材料齐备 → 无占位\"。）\n\n## 案例一：邻市政务数据共享平台\n\n- **项目 / 客户 / 实施对象**：邻市大数据管理局\"政务数据共享平台\"**项目**，实施对象为该局及所属各委办局。\n",
+      "start_char": 0,
+      "end_char": 140,
+      "start_line": 1,
+      "end_line": 7,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-6abbdc3d900b9f3d8d5be39771ee53b2b477ce85998fe57dc8102dc23407207b",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "## 案例一：邻市政务数据共享平台\n\n- **项目 / 客户 / 实施对象**：邻市大数据管理局\"政务数据共享平台\"**项目**，实施对象为该局及所属各委办局。\n- **实际实施内容**：完成多部门数据归集、建成统一共享接口、部署数据质量治理规则库，覆盖归集、\n  共享、监测全链路。\n",
+      "start_char": 59,
+      "end_char": 202,
+      "start_line": 5,
+      "end_line": 9,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-fcc63cf4475405936e3291f84e0f482c4098bc73edf0e0c876e1cc413507d844",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "  阶段，持续为各部门提供数据共享服务。\n\n## 案例二：某省属集团数据中台\n\n- **项目 / 客户 / 实施对象**：某省属国有集团\"数据中台\"建设**项目**，实施对象为集团及下属企业。\n",
+      "start_char": 267,
+      "end_char": 364,
+      "start_line": 11,
+      "end_line": 15,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-a0142b3f45418c80b4aab39baaf27499b175db5d86d2632c49db087f86f8e62c",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "## 案例二：某省属集团数据中台\n\n- **项目 / 客户 / 实施对象**：某省属国有集团\"数据中台\"建设**项目**，实施对象为集团及下属企业。\n- **实际实施内容**：建成多源数据接入通道、数据质量治理引擎与运营监测中心，接入下属企业业务系统。\n- **实施 / 上线 / 验收 / 应用状态**：该项目**已完成上线**，并**通过集团验收**，现处于**常态化应用**\n  与运维阶段。\n",
+      "start_char": 289,
+      "end_char": 489,
+      "start_line": 13,
+      "end_line": 18,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-ce6ecc964533a6970b871b85a62f19044cea05cc7edee668046de0ae30b10798",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "的政务数据平台，**边界**为不含涉密专网系统、不含非政务数据。\n\n## 二、建设目标\n\n**目标**一：建成统一政务数据中台，达到\"一次归集、多方共享\"的**预期状态**；\n",
+      "start_char": 164,
+      "end_char": 252,
+      "start_line": 9,
+      "end_line": 13,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-befc517f4f049bf7d453614c497773af48accb9e4305780d48d61cebd28c75b3",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "## 一、建设范围与对象\n\n本项目**建设对象**为示范市大数据局及全市各委办局的政务数据系统，**服务对象**为市、区两级\n政务部门。**范围**覆盖数据归集、共享、质量治理与运营监测四类业务，**系统范围**为市级政务云内\n的政务数据平台，**边界**为不含涉密专网系统、不含非政务数据。\n",
+      "start_char": 50,
+      "end_char": 197,
+      "start_line": 5,
+      "end_line": 9,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-708043d811e1741c7cff805e4b47e853d7bed2bcb16c0022024ac6c9cbeedecd",
+      "document_id": "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "text": "> （完全合成示例，非真实数据。）\n\n## 一、总体建设内容与能力\n\n平台**建设内容**包括四大模块：统一数据归集通道、数据质量治理引擎、共享交换服务网关、运营监测\n",
+      "start_char": 25,
+      "end_char": 109,
+      "start_line": 3,
+      "end_line": 7,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-5eeae04b08f9f5ae774d2639e020e57302e2d04dd9cf4f8b1c35ba839e91abba",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "**目标**三：形成可持续运营机制，目标**可检查**——以是否建成统一接口、是否上线质量规则库为判断依据。\n\n## 三、实施条件与边界\n\n**实施前提**：市政务云已提供计算与存储资源、各部门已完成数据资产梳理；\n",
+      "start_char": 308,
+      "end_char": 416,
+      "start_line": 15,
+      "end_line": 19,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-cce2bc99b6edc044828e91e35e5c018612f4ad9921a891aa5dbf8169c92c9962",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "## 案例一：邻市政务数据共享平台\n\n- **项目 / 客户 / 实施对象**：邻市大数据管理局\"政务数据共享平台\"**项目**，实施对象为该局及所属各委办局。\n- **实际实施内容**：完成多部门数据归集、建成统一共享接口、部署数据质量治理规则库，覆盖归集、\n  共享、监测全链路。\n- **实施 / 上线 / 验收 / 应用状态**：该项目**已上线运行**，并**通过第三方验收**，目前处于**稳定应用**\n",
+      "start_char": 59,
+      "end_char": 267,
+      "start_line": 5,
+      "end_line": 10,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-2f8bdaf845cac4b4207e6c3801595d5c57eec48a2dd0c142fb474284284de787",
+      "document_id": "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "text": "## 四、预期成效\n\n**预期成效**为：建成统一政务数据中台后，跨部门数据共享由人工报送转为实时接口交换、数据质量\n经统一规则库校验后明显改善。这是本项目的核心**成效**，**作用对象**为各委办局业务处室与一线经办人员。\n\n该**成效**的**判断依据**明确、**可检查**：以统一共享接口是否建成并上线、质量规则库是否上线拦截脏数据、\n共享服务是否稳定运行为准，可逐项核对。\n",
+      "start_char": 526,
+      "end_char": 719,
+      "start_line": 24,
+      "end_line": 30,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-23e6428b622af333e5d26f13514808edb986e0bde671325d05af7a3678f860d8",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "# 示范市政务数据中台项目 依据与现状说明\n\n> （完全合成示例，非真实数据；本套 demo 用于演示\"材料齐备 → 无占位 DELIVERABLE\"。）\n",
+      "start_char": 0,
+      "end_char": 78,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-34c2b1bea33f1dcf60061510165ed74829746e6a9f2a0f9ca7153440935f613d",
+      "document_id": "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "text": "本项目**依据**《示范市数字政府建设三年行动方案》与上级主管部门的专项规划**批复**推进。国家出台\n数字经济与数据要素**政策**，明确要求推进政务数据汇聚共享。上述政策**背景**与本项目直接相关：\n本项目正是落实该专项规划批复中\"建设统一政务数据中台\"一条的具体工程，**与当前项目的关系**为\n直接承接、逐条对应。\n\n",
+      "start_char": 93,
+      "end_char": 257,
+      "start_line": 7,
+      "end_line": 11,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    },
+    {
+      "evidence_id": "ev-7196e0c185cba96745d84454088211a66fd4d4e9471dc0e83b03f2bfb524b24e",
+      "document_id": "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3",
+      "text": "# 同类项目实施案例汇编\n\n> （完全合成示例，非真实数据、非真实客户；仅用于演示\"案例材料齐备 → 无占位\"。）\n",
+      "start_char": 0,
+      "end_char": 58,
+      "start_line": 1,
+      "end_line": 3,
+      "page": null,
+      "discovery_sources": [
+        "vector",
+        "ripgrep"
+      ]
+    }
+  ],
+  "pending": [],
+  "trace": {
+    "contract_id": "solution_material_completeness_v1",
+    "document_ids": [
+      "00d492e8c94a8978cf9c9ad82804eb488be6059ccbe8c7dabde961d052b34639",
+      "1b5ac5be1525121bc4190ae6c867f912a258476064a4e2a04909cf8eadf3cf67",
+      "8b282b91ab2c1630b85dd1a4dfac620fb58e4b4a9c0baba630823235e6a18409",
+      "962558975f6559fc5cca7fa9589a11999c848ac62d85737272036136efed53a3"
+    ],
+    "document_count": 4,
+    "vector_index_fingerprint": "729ea3682e6323cfb4737998d5a23ab884b89825120fb78c079ced383eb8e7fe",
+    "max_chars": 800,
+    "top_k_per_slot": 8,
+    "context_lines": 2,
+    "max_span_chars": 1200,
+    "max_results_per_slot": 20,
+    "per_slot": {
+      "background_and_basis": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 13,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 13,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "current_state_and_needs": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 14,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 14,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "scope_and_subjects": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 14,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 14,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "objectives": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 16,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 16,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "solution_content_and_capabilities": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 16,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 16,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "implementation_conditions_and_boundaries": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 19,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 19,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "reference_cases_and_proof": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 14,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 14,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      },
+      "outcomes_and_metrics": {
+        "vector_candidate_count": 4,
+        "anchor_count": 24,
+        "exact_span_count": 12,
+        "fallback_used": false,
+        "verification_status": "filled",
+        "initial_evidence_count": 12,
+        "initial_verification_status": "filled",
+        "initial_missing_fields": [],
+        "rescue_available": false,
+        "rescue_candidate_count": 0,
+        "rescue_candidate_evidence_ids": [],
+        "rescue_candidate_exact_raw_ranks": [],
+        "rescue_attempted": false,
+        "eviction_candidates_checked": 0,
+        "neutral_eviction_count": 0,
+        "swap_attempt_count": 0,
+        "rescue_applied": false,
+        "evicted_evidence_id": null,
+        "inserted_evidence_id": null,
+        "final_verification_status": "filled",
+        "final_missing_fields": [],
+        "guard_failure_reasons": []
+      }
+    },
+    "input_completeness": {
+      "complete": true,
+      "total_gaps": 0,
+      "documents": []
+    }
+  }
+}

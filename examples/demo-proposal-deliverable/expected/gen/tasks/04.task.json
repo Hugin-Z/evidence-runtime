@@ -1,0 +1,105 @@
+{
+  "section_id": "04",
+  "section_title": "方案亮点",
+  "gate": "allow",
+  "gate_meaning": "证据充分，允许正常撰写",
+  "writing": {
+    "structure": [
+      "核心亮点逐条",
+      "每条亮点的能力/证据支撑"
+    ],
+    "tone": "每条亮点必须落到方案里真实存在的能力，不堆砌形容词",
+    "length_basis": "中等，3–5 条亮点"
+  },
+  "project_params": {
+    "project_name": "示范市政务数据中台项目",
+    "client_name": "示范市大数据局（虚构）",
+    "industry_domain": "数字政府",
+    "project_number": null,
+    "budget": "260万元",
+    "duration": "8个月"
+  },
+  "evidence": [
+    {
+      "span_ref": "e39",
+      "content": "> （完全合成示例，非真实数据。）\n\n## 一、总体建设内容与能力\n\n平台**建设内容**包括四大模块：统一数据归集通道、数据质量治理引擎、共享交换服务网关、运营监测\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e40",
+      "content": "- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n- **模块**四：运营监测中心——提供实时监测与告警**功能**。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e41",
+      "content": "各**建设内容**与前述需求逐条**对应**（alignment）：\n\n- 统一数据归集通道 **对应**\"统一归集通道缺失\"需求，直接**满足目标**\"统一数据归集\"；\n- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 二、建设内容与需求/目标的对应关系",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability",
+        "alignment_with_need_or_objective"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e42",
+      "content": "## 一、总体建设内容与能力\n\n平台**建设内容**包括四大模块：统一数据归集通道、数据质量治理引擎、共享交换服务网关、运营监测\n中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e43",
+      "content": "中心。核心**能力**涵盖多源数据接入、标准化清洗、质量校验、共享审批与全链路监测。\n\n- **模块**一：统一数据归集通道——支持库表、文件、接口三类接入方式；\n- **模块**二：数据质量治理引擎——提供校验规则库与脏数据拦截**功能**；\n- **模块**三：共享交换服务网关——提供标准化 API 与审批留痕**能力**；\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 一、总体建设内容与能力",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e44",
+      "content": "## 一、建设范围与对象\n\n本项目**建设对象**为示范市大数据局及全市各委办局的政务数据系统，**服务对象**为市、区两级\n政务部门。**范围**覆盖数据归集、共享、质量治理与运营监测四类业务，**系统范围**为市级政务云内\n的政务数据平台，**边界**为不含涉密专网系统、不含非政务数据。\n",
+      "source": "《建设范围目标与成效》· 示范市政务数据中台项目 建设范围、目标、实施条件与成效 > 一、建设范围与对象",
+      "supports_fields": [
+        "concrete_content_module_function_or_capability"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    },
+    {
+      "span_ref": "e45",
+      "content": "- 数据质量治理引擎 **对应**\"无质量校验形成脏数据\"问题，**对齐**\"统一质量治理\"目标；\n- 共享交换服务网关 **对应**\"共享审批链路长\"问题，**对齐**\"统一共享接口\"目标；\n- 运营监测中心 **对应**\"实时数据交换与质量监测需求迫切\"，**满足**实时监测**目标**。\n\n每一项**能力**都与某条**需求或目标**建立了明确对应关系，无悬空能力。\n",
+      "source": "《技术方案与能力说明》· 示范市政务数据中台项目 技术方案与能力说明 > 二、建设内容与需求/目标的对应关系",
+      "supports_fields": [
+        "alignment_with_need_or_objective"
+      ],
+      "slot_id": "solution_content_and_capabilities"
+    }
+  ],
+  "missing_fields": [],
+  "constraints": [
+    "证据优先：每个陈述事实的段落必须绑定至少一个 span_ref，且只能引用本任务包 evidence[] 里的条目。",
+    "不得引入任务包外的任何材料、事实、数字、案例或引用——包外即视为编造。",
+    "缺证据的字段（见 missing_fields）必须留 `【待补充：字段说明】` 占位，严禁用训练数据或常识补全。",
+    "不脑补、不扩展用户字面输入、不为“完整性”自行加配套内容；宁缺毋滥。",
+    "不虚构业绩/客户/金额/证书等硬数据；材料没有就留占位。",
+    "履约前置条件（配套/环境/第三方协作）不写免责句式，写成投标方主动核查+承担。",
+    "正文用自然语言，不出现工具链内部字段名或标识符。"
+  ],
+  "response_format": {
+    "paragraphs": "每段 {text, span_refs}；陈述事实的段落必须绑定至少一个包内 span_ref",
+    "placeholder": "无证据字段写 `【待补充：字段说明】`，该段 span_refs 留空",
+    "limited_note": "gate=limited 时必填，标注证据不足之处；否则可为 null"
+  },
+  "limited_note_required": false,
+  "injection_warnings": []
+}

@@ -1,0 +1,159 @@
+{
+  "order": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06"
+  ],
+  "outcomes": {
+    "01": {
+      "section_id": "01",
+      "section_title": "公司实力",
+      "category": "placeholder",
+      "status": "placeholder",
+      "gate": null,
+      "attempts": 0,
+      "problems": [],
+      "placeholder_reason": "out_of_evidence_scope：公司主体信息（资质/简介/团队/业绩）来自 solution-drafter L3 领域插件 own_*，非项目材料证据；Engine 8 槽不覆盖。，走 drafter L3 领域插件/intake。",
+      "draft": null,
+      "response_digest": null
+    },
+    "02": {
+      "section_id": "02",
+      "section_title": "项目理解",
+      "category": "dispatched",
+      "status": "accepted",
+      "gate": "allow",
+      "attempts": 1,
+      "problems": [],
+      "placeholder_reason": null,
+      "draft": {
+        "section_id": "02",
+        "paragraphs": [
+          {
+            "text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。",
+            "span_refs": [
+              "e1"
+            ],
+            "paragraph_id": "02#p01",
+            "content_hash": "8eccdeefb6d798c0"
+          },
+          {
+            "text": "园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。",
+            "span_refs": [
+              "e4"
+            ],
+            "paragraph_id": "02#p02",
+            "content_hash": "41eeb48323981446"
+          },
+          {
+            "text": "建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+            "span_refs": [
+              "e10"
+            ],
+            "paragraph_id": "02#p03",
+            "content_hash": "7d16ef9533c4a76e"
+          }
+        ],
+        "limited_note": null
+      },
+      "response_digest": "fa0311881368549b"
+    },
+    "03": {
+      "section_id": "03",
+      "section_title": "方案架构",
+      "category": "dispatched",
+      "status": "accepted",
+      "gate": "limited",
+      "attempts": 1,
+      "problems": [],
+      "placeholder_reason": null,
+      "draft": {
+        "section_id": "03",
+        "paragraphs": [
+          {
+            "text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。",
+            "span_refs": [
+              "e14"
+            ],
+            "paragraph_id": "03#p01",
+            "content_hash": "a04ddb2ea757ce4d"
+          },
+          {
+            "text": "【待补充：与需求/目标的对齐说明，以及实施主体、实际实施内容与上线验收状态】",
+            "span_refs": [],
+            "paragraph_id": "03#p02",
+            "content_hash": "790207bb566ca2e0"
+          }
+        ],
+        "limited_note": "本节部分内容有材料支撑，但与需求/目标的对齐、以及实施与验收情况尚缺证据（见占位），所述能力属规划设想。"
+      },
+      "response_digest": "619750ba8011c946"
+    },
+    "04": {
+      "section_id": "04",
+      "section_title": "方案亮点",
+      "category": "dispatched",
+      "status": "accepted",
+      "gate": "limited",
+      "attempts": 1,
+      "problems": [],
+      "placeholder_reason": null,
+      "draft": {
+        "section_id": "04",
+        "paragraphs": [
+          {
+            "text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。",
+            "span_refs": [
+              "e16"
+            ],
+            "paragraph_id": "04#p01",
+            "content_hash": "ea6de996326cf8b9"
+          },
+          {
+            "text": "本平台已在多个园区规模化应用、运营成本下降30%。",
+            "span_refs": [
+              "e16"
+            ],
+            "paragraph_id": "04#p02",
+            "content_hash": "e06e897e95331ef1"
+          },
+          {
+            "text": "【待补充：亮点与本项目需求/目标的对齐说明】",
+            "span_refs": [],
+            "paragraph_id": "04#p03",
+            "content_hash": "169a0c744e74df6b"
+          }
+        ],
+        "limited_note": null
+      },
+      "response_digest": "b29dd09dffc59b9b"
+    },
+    "05": {
+      "section_id": "05",
+      "section_title": "类似案例",
+      "category": "placeholder",
+      "status": "placeholder",
+      "gate": "block",
+      "attempts": 0,
+      "problems": [],
+      "placeholder_reason": "证据不足（缺字段：['project_customer_or_implementation_subject', 'actual_implementation_content', 'implementation_launch_acceptance_or_usage_status']），阻断生成，产占位待补料。",
+      "draft": null,
+      "response_digest": null
+    },
+    "06": {
+      "section_id": "06",
+      "section_title": "报价概要",
+      "category": "placeholder",
+      "status": "placeholder",
+      "gate": null,
+      "attempts": 0,
+      "problems": [],
+      "placeholder_reason": "out_of_evidence_scope：报价来自 intake 的 budget_range / 商务侧，非项目材料证据；Engine 8 槽不覆盖。，走 drafter L3 领域插件/intake。",
+      "draft": null,
+      "response_digest": null
+    }
+  }
+}

@@ -1,0 +1,130 @@
+# Rerank 正确性冒烟留档（2026-07-16T08:24:51）
+
+服务: b10012-win-cuda-12.4 @ http://127.0.0.1:1235/v1/rerank  |  rerank_context=8192
+模型: bge-reranker-v2-m3-Q8_0.gguf  size=635676416  sha256=a43c7c9b11a4c1517e5bf95151960e1621d1b72f7a493364b01e386cf1aaa1d3
+判定: 方向 6/6（pass=True）  区分度 12/12  退化=False  **GATE_PASS=True**
+
+## NFCorpus（corpus_sha=0939a70808d8, split=test；CC BY-SA 4.0，归因见 ../../../../THIRD_PARTY_NOTICES.md）
+- [PLAIN-1008] rel=-2.52485 irr=-10.52871 Δ=+8.00387 ok=True  (rel_pid=MED-4532 qrels=1, irr_pid=MED-10, 266.0ms)
+    query: deafness
+- [PLAIN-1018] rel=-1.12857 irr=-3.72081 Δ=+2.59225 ok=True  (rel_pid=MED-1831 qrels=1, irr_pid=MED-10, 47.1ms)
+    query: DHA
+- [PLAIN-102] rel=0.63742 irr=-7.01337 Δ=+7.65079 ok=True  (rel_pid=MED-3253 qrels=2, irr_pid=MED-10, 206.2ms)
+    query: Stopping Heart Disease in Childhood
+
+## CovidRetrieval（split=dev；公开聚合记录）
+- [covid-pair-01] rel=4.18538 irr=-10.66071 Δ=+14.84609 ok=True (866.9ms)
+- [covid-pair-02] rel=3.58208 irr=-10.24057 Δ=+13.82264 ok=True (31.6ms)
+- [covid-pair-03] rel=5.83734 irr=-9.82614 Δ=+15.66348 ok=True (24.5ms)
+- aggregate: pairs=3, direction_ok=3/3, Δ_min=+13.82264, Δ_max=+15.66348, Δ_mean=+14.77740
+- [2026-07-29 公开前许可收口] query/qid/document id/qrels/语料 hash 均不写入公开记录；逐对分数和
+  delta 保留，delta_min/max/mean 可由 pairs[].delta 独立复算。
+
+## 完整 JSON
+```json
+{
+  "generated_at": "2026-07-16T08:24:51",
+  "service": {
+    "url": "http://127.0.0.1:1235/v1/rerank",
+    "llama_version": "b10012-win-cuda-12.4",
+    "rerank_context": "8192",
+    "model_file": "bge-reranker-v2-m3-Q8_0.gguf",
+    "model_size_bytes": 635676416,
+    "model_sha256": "a43c7c9b11a4c1517e5bf95151960e1621d1b72f7a493364b01e386cf1aaa1d3"
+  },
+  "datasets": {
+    "NFCorpus": {
+      "corpus_sha256_12": "0939a70808d8",
+      "split": "test",
+      "pairs": [
+        {
+          "qid": "PLAIN-1008",
+          "query": "deafness",
+          "rel_pid": "MED-4532",
+          "rel_qrels_score": 1,
+          "irr_pid": "MED-10",
+          "score_rel": -2.5248453617095947,
+          "score_irr": -10.52871322631836,
+          "delta": 8.003867864608765,
+          "direction_ok": true,
+          "elapsed_ms": 266.0
+        },
+        {
+          "qid": "PLAIN-1018",
+          "query": "DHA",
+          "rel_pid": "MED-1831",
+          "rel_qrels_score": 1,
+          "irr_pid": "MED-10",
+          "score_rel": -1.1285682916641235,
+          "score_irr": -3.7208142280578613,
+          "delta": 2.592245936393738,
+          "direction_ok": true,
+          "elapsed_ms": 47.1
+        },
+        {
+          "qid": "PLAIN-102",
+          "query": "Stopping Heart Disease in Childhood",
+          "rel_pid": "MED-3253",
+          "rel_qrels_score": 2,
+          "irr_pid": "MED-10",
+          "score_rel": 0.6374229192733765,
+          "score_irr": -7.013368606567383,
+          "delta": 7.650791525840759,
+          "direction_ok": true,
+          "elapsed_ms": 206.2
+        }
+      ]
+    },
+    "CovidRetrieval": {
+      "split": "dev",
+      "pairs": [
+        {
+          "score_rel": 4.185379981994629,
+          "score_irr": -10.660707473754883,
+          "delta": 14.846087455749512,
+          "direction_ok": true,
+          "elapsed_ms": 866.9,
+          "pair_id": "covid-pair-01"
+        },
+        {
+          "score_rel": 3.5820765495300293,
+          "score_irr": -10.240567207336426,
+          "delta": 13.822643756866455,
+          "direction_ok": true,
+          "elapsed_ms": 31.6,
+          "pair_id": "covid-pair-02"
+        },
+        {
+          "score_rel": 5.837337970733643,
+          "score_irr": -9.826141357421875,
+          "delta": 15.663479328155518,
+          "direction_ok": true,
+          "elapsed_ms": 24.5,
+          "pair_id": "covid-pair-03"
+        }
+      ],
+      "aggregate": {
+        "pair_count": 3,
+        "direction_ok": 3,
+        "direction_pass": true,
+        "delta_min": 13.822643756866455,
+        "delta_max": 15.663479328155518,
+        "delta_mean": 14.777403513590494,
+        "delta_mean_method": "arithmetic mean of pairs[].delta at stored precision"
+      },
+      "upstream_details_retained": false
+    }
+  },
+  "verdict": {
+    "direction": "6/6",
+    "direction_pass": true,
+    "distinct_scores": "12/12",
+    "score_range": [
+      -10.660707473754883,
+      5.837337970733643
+    ],
+    "degenerate": false,
+    "gate_pass": true
+  }
+}
+```

@@ -1,0 +1,117 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  # ── 1. 源码/editable：单元测试 + demo 全链（真收货，不复制预制 state）──────────
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install ripgrep (system dependency for the lexical / Exact Locator path)
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package + test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[test]"
+
+      - name: rg available
+        run: rg --version
+
+      - name: pytest
+        run: python -m pytest -q
+
+      - name: compileall (production chain imports clean)
+        run: python -m compileall -q evidence
+
+      # demo 全链（fake embedder；**真收货**：生成任务包→放置示例回稿→收货盖章→绑定审计→渲染）。
+      # 每步按预期返回码判定（gap_checker 对 incomplete 返回 1 是设计行为，不是 set -e 一刀切）。
+      - name: demo full-chain (real receiving, no external service)
+        run: bash examples/demo-proposal/run_chain.sh python "${RUNNER_TEMP}/demo-editable"
+
+      - name: deliverable demo full-chain (all slots filled)
+        run: bash examples/demo-proposal-deliverable/run_chain.sh python "${RUNNER_TEMP}/demo-deliverable-editable"
+
+  # ── 2. wheel：从 wheel 安装、离开仓库目录 import + 跑 demo 全链 ─────────
+  wheel:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Build wheel
+        run: |
+          python -m pip install --upgrade pip build
+          python -m build --wheel --outdir dist
+
+      - name: Install wheel into a clean venv
+        run: |
+          python -m venv "${RUNNER_TEMP}/venv"
+          "${RUNNER_TEMP}/venv/bin/pip" install --upgrade pip
+          "${RUNNER_TEMP}/venv/bin/pip" install dist/*.whl pytest
+
+      - name: Import + resolve contracts from OUTSIDE the repo (contracts ship in the wheel)
+        working-directory: ${{ runner.temp }}
+        run: |
+          "${RUNNER_TEMP}/venv/bin/python" - <<'PY'
+          import evidence
+          import evidence.core
+          import evidence.contracts
+          from evidence.resources import contracts_dir, crosswalk_dir, section_specs_dir
+          assert contracts_dir().is_dir(), contracts_dir()
+          assert crosswalk_dir().is_dir() and section_specs_dir().is_dir()
+          # 契约必须从 site-packages（wheel）解析，不是仓库树
+          assert "site-packages" in str(contracts_dir()), contracts_dir()
+          from evidence.brief import load_crosswalk
+          from evidence.contract import solution_material_completeness_v1 as c
+          load_crosswalk("解决方案建议书", contract=c)
+          print("wheel-installed, outside repo, contracts resolved:", contracts_dir())
+          PY
+
+      - name: Console scripts + dependency health
+        working-directory: ${{ runner.temp }}
+        run: |
+          for cmd in evidence-intake evidence-library evidence-gap-check evidence-generate evidence-audit evidence-render; do
+            "${RUNNER_TEMP}/venv/bin/${cmd}" --help >/dev/null
+          done
+          "${RUNNER_TEMP}/venv/bin/python" -m pip check
+
+      # 用 venv 的 python 跑 demo 全链；demo 素材从仓库 checkout（$GITHUB_WORKSPACE）取，
+      # 契约/crosswalk 从 wheel 取——证明发行链完整。
+      - name: shareable demo full-chain from wheel (outside repo)
+        working-directory: ${{ runner.temp }}
+        run: bash "${GITHUB_WORKSPACE}/examples/demo-proposal/run_chain.sh" \
+          "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-wheel" \
+          "${GITHUB_WORKSPACE}/examples/demo-proposal"
+
+      - name: deliverable demo full-chain from wheel (outside repo)
+        working-directory: ${{ runner.temp }}
+        run: bash "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable/run_chain.sh" \
+          "${RUNNER_TEMP}/venv/bin/python" "${RUNNER_TEMP}/demo-deliverable-wheel" \
+          "${GITHUB_WORKSPACE}/examples/demo-proposal-deliverable"

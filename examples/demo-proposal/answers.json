@@ -1,0 +1,11 @@
+{
+  "doc_type": "proposal-document",
+  "project_name": "示范市智慧园区管理平台",
+  "client_name": "示范市园区管理办公室（虚构）",
+  "industry_domain": "智慧园区",
+  "project_id": "demo",
+  "section_scope": "all",
+  "budget": "180万元",
+  "duration": "6个月",
+  "project_nature": "platform"
+}

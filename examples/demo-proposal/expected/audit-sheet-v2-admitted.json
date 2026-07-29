@@ -1,0 +1,65 @@
+{
+  "audit_sheet_schema_version": "m4-audit-sheet-v1",
+  "meta": {
+    "auditor": "demo-auditor",
+    "audited_at": "2026-07-28"
+  },
+  "claims": [
+    {
+      "claim_text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e1"
+      ],
+      "paragraph_id": "02#p01",
+      "paragraph_hash": "8eccdeefb6d798c0",
+      "claim_unit_id": "02#p01#u01"
+    },
+    {
+      "claim_text": "园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e4"
+      ],
+      "paragraph_id": "02#p02",
+      "paragraph_hash": "41eeb48323981446",
+      "claim_unit_id": "02#p02#u01"
+    },
+    {
+      "claim_text": "建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+      "section_id": "02",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e10"
+      ],
+      "paragraph_id": "02#p03",
+      "paragraph_hash": "7d16ef9533c4a76e",
+      "claim_unit_id": "02#p03#u01"
+    },
+    {
+      "claim_text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。",
+      "section_id": "03",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e14"
+      ],
+      "paragraph_id": "03#p01",
+      "paragraph_hash": "a04ddb2ea757ce4d",
+      "claim_unit_id": "03#p01#u01"
+    },
+    {
+      "claim_text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。",
+      "section_id": "04",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e16"
+      ],
+      "paragraph_id": "04#p01",
+      "paragraph_hash": "ea6de996326cf8b9",
+      "claim_unit_id": "04#p01#u01"
+    }
+  ],
+  "no_claim_sections": []
+}

@@ -1,0 +1,14 @@
+# Keep source and public records reviewable across Windows/Linux.
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+# Demo/CI scripts run on Linux even when contributors check out on Windows.
+*.sh text eol=lf
+*.docx binary

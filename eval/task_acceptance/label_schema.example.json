@@ -1,0 +1,44 @@
+{
+  "dataset_id": "example-dataset",
+  "description": "人工填写该数据集的真实材料特征，不使用模型生成说明。",
+  "contract_id": "solution_material_completeness_v1",
+  "slots": {
+    "background_and_basis": {
+      "expected_status": "filled",
+      "reason": "人工填写判断依据。",
+      "references": [
+        "materials/example.md：相关段落说明"
+      ]
+    },
+    "current_state_and_needs": {
+      "expected_status": "weak",
+      "reason": "人工填写判断依据。"
+    },
+    "scope_and_subjects": {
+      "expected_status": "missing",
+      "reason": "人工填写判断依据。"
+    },
+    "objectives": {
+      "expected_status": "filled",
+      "reason": "人工填写判断依据。"
+    },
+    "solution_content_and_capabilities": {
+      "expected_status": "filled",
+      "reason": "人工填写判断依据。"
+    },
+    "implementation_conditions_and_boundaries": {
+      "expected_status": "weak",
+      "reason": "人工填写判断依据。"
+    },
+    "reference_cases_and_proof": {
+      "expected_status": "missing",
+      "reason": "人工填写判断依据。"
+    },
+    "outcomes_and_metrics": {
+      "expected_status": "conflicting",
+      "reason": "人工填写判断依据。"
+    }
+  },
+  "overall_expected_status": "conflicted",
+  "notes": "可选人工备注；不得省略字段。"
+}

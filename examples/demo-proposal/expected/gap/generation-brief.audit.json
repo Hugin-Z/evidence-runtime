@@ -1,0 +1,223 @@
+{
+  "e1": {
+    "evidence_id": "ev-ecd7e150976f6d630797ad8477b8db35215c9ca287246817d3a5d7f5fb758f64",
+    "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+    "start_char": 23,
+    "end_char": 103,
+    "start_line": 3,
+    "end_line": 7,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e2": {
+    "evidence_id": "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+    "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+    "start_char": 36,
+    "end_char": 118,
+    "start_line": 5,
+    "end_line": 8,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e3": {
+    "evidence_id": "ev-b563150837263d204dbcc9decd09a622da22239fc40082196a76f26e64ee91fe",
+    "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+    "start_char": 103,
+    "end_char": 206,
+    "start_line": 8,
+    "end_line": 12,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e4": {
+    "evidence_id": "ev-7b83f00a21d9b29f500822407c5c92baaa1feb31fd7b4e4fcbb3365f6378b97b",
+    "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+    "start_char": 138,
+    "end_char": 239,
+    "start_line": 10,
+    "end_line": 14,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e5": {
+    "evidence_id": "ev-65945094d9d37db425485ef138097f6f87fbf4bbedf8fb6ca13d58443c19823d",
+    "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+    "start_char": 0,
+    "end_char": 35,
+    "start_line": 1,
+    "end_line": 3,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e6": {
+    "evidence_id": "ev-628f298050e814f014c6cea8dda861d027271325eec82bee4255c0f7728d686c",
+    "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+    "start_char": 128,
+    "end_char": 219,
+    "start_line": 9,
+    "end_line": 11,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e7": {
+    "evidence_id": "ev-f48ae8ba604e59172201bc2baed043c1dd410e6b910bc924d320d06a5a1d9ec2",
+    "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+    "start_char": 0,
+    "end_char": 31,
+    "start_line": 1,
+    "end_line": 3,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e8": {
+    "evidence_id": "ev-5e21da82aa06a14a1f2c9695657b2d2f1236ebee68fc18ad9ada036ed80eda7a",
+    "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+    "start_char": 0,
+    "end_char": 41,
+    "start_line": 1,
+    "end_line": 3,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e9": {
+    "evidence_id": "ev-d2d04a5e18a89c5ac8a53b4098f6eacfe408c85e367d2319ebc275d046b8e549",
+    "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+    "start_char": 0,
+    "end_char": 38,
+    "start_line": 1,
+    "end_line": 3,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e10": {
+    "evidence_id": "ev-0d41fdd9dd3c701558ba34d7c9225dc5ac3670c77898fc01d0f0814562b77e0d",
+    "document_id": "de2c8c3e2be13477d31cd3cd9185feeb0180452f924a22e223581b069d17293e",
+    "start_char": 239,
+    "end_char": 315,
+    "start_line": 15,
+    "end_line": 18,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e11": {
+    "evidence_id": "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+    "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+    "start_char": 36,
+    "end_char": 118,
+    "start_line": 5,
+    "end_line": 8,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e12": {
+    "evidence_id": "ev-d7fc5b9388f8a0314a431e161571ee1b182eec7f1f32622534f9a51e4e0185a7",
+    "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+    "start_char": 42,
+    "end_char": 101,
+    "start_line": 5,
+    "end_line": 9,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e13": {
+    "evidence_id": "ev-286f446265bd095e58d9585b6ecea9c5d52da288aca6ece0b2ecf313d20d9009",
+    "document_id": "7ca32e00fcc2fc03a60ece0db63d4224903b0162cea4546d6cb35f19dedc3256",
+    "start_char": 60,
+    "end_char": 114,
+    "start_line": 6,
+    "end_line": 10,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e14": {
+    "evidence_id": "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+    "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+    "start_char": 18,
+    "end_char": 127,
+    "start_line": 3,
+    "end_line": 7,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e15": {
+    "evidence_id": "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+    "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+    "start_char": 36,
+    "end_char": 118,
+    "start_line": 5,
+    "end_line": 8,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e16": {
+    "evidence_id": "ev-6f304686fa2871f4d23839121da7d953fe4209f823576584ea7c3d927d87f380",
+    "document_id": "10cc9412b0701cd95c0a33047f44f95d6429df960b0cd596e0ec51727bc0e309",
+    "start_char": 18,
+    "end_char": 127,
+    "start_line": 3,
+    "end_line": 7,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  },
+  "e17": {
+    "evidence_id": "ev-586881f018a322e33625598196880ba8f707a4735316953e0a4dbe9a45a26b0a",
+    "document_id": "140aabcfbf481472397fc8aa7af3908daea95af56af33b2acef5a0a864352b2b",
+    "start_char": 36,
+    "end_char": 118,
+    "start_line": 5,
+    "end_line": 8,
+    "page": null,
+    "discovery_sources": [
+      "vector",
+      "ripgrep"
+    ]
+  }
+}

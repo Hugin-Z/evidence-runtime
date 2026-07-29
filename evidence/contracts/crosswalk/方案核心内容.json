@@ -1,0 +1,69 @@
+{
+  "crosswalk_version": "m2-crosswalk-v1",
+  "doc_type": "solution-core",
+  "doc_type_zh": "方案核心内容",
+  "contract_id": "solution_material_completeness_v1",
+  "_note": "解决方案建议书 crosswalk 的证据支撑子集：去掉公司实力与报价概要两节范围外占位，只保留 02-05 四节证据支撑内容。配套 examples/demo-proposal-deliverable/ 的齐备材料可形成无占位 DELIVERABLE。doc_type 使用独立 solution-core；section specs 复用 proposal-document 的 02-05。",
+  "sections": [
+    {
+      "section_id": "02",
+      "section_title": "项目理解",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {
+          "asset_type": "行业政策",
+          "slot_id": "background_and_basis"
+        },
+        {
+          "asset_type": "客户业务背景",
+          "slot_id": "current_state_and_needs"
+        }
+      ]
+    },
+    {
+      "section_id": "03",
+      "section_title": "方案架构",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {
+          "asset_type": "产品能力",
+          "slot_id": "solution_content_and_capabilities"
+        },
+        {
+          "asset_type": "技术架构参考",
+          "slot_id": "solution_content_and_capabilities"
+        },
+        {
+          "asset_type": "集成案例",
+          "slot_id": "reference_cases_and_proof"
+        }
+      ]
+    },
+    {
+      "section_id": "04",
+      "section_title": "方案亮点",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {
+          "asset_type": "差异化优势",
+          "slot_id": "solution_content_and_capabilities"
+        },
+        {
+          "asset_type": "产品亮点",
+          "slot_id": "solution_content_and_capabilities"
+        }
+      ]
+    },
+    {
+      "section_id": "05",
+      "section_title": "类似案例",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {
+          "asset_type": "类似项目案例",
+          "slot_id": "reference_cases_and_proof"
+        }
+      ]
+    }
+  ]
+}

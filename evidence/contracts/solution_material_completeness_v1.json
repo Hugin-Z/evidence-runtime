@@ -1,0 +1,145 @@
+{
+  "contract_id": "solution_material_completeness_v1",
+  "version": "1.0",
+  "name": "政企解决方案材料完整性检查",
+  "description": "检查政企解决方案相关材料是否覆盖形成可审查方案所需的八类必要证据。",
+  "slots": [
+    {
+      "slot_id": "background_and_basis",
+      "name": "背景与依据",
+      "description": "识别明确政策、项目要求、上位文件或建设背景，并确认该依据与当前项目的关系。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "basis_reference_or_background",
+        "relationship_to_current_project"
+      ],
+      "weak_conditions": [
+        "只描述行业趋势",
+        "只出现政策名称但没有相关内容",
+        "只有响应国家战略等泛化表述"
+      ],
+      "material_request": "补充适用的政策、项目要求或上位文件原文，并说明其与当前项目建设的直接关系。"
+    },
+    {
+      "slot_id": "current_state_and_needs",
+      "name": "现状问题与需求",
+      "description": "说明当前状态、具体问题或需求，以及受到影响的对象、业务或环节。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "current_state",
+        "specific_problem_or_need",
+        "affected_subject_business_or_process"
+      ],
+      "weak_conditions": [
+        "只有存在短板等口号式内容",
+        "只有亟须提升等口号式内容"
+      ],
+      "material_request": "补充当前业务或系统现状、具体问题及受影响对象或环节的事实材料。"
+    },
+    {
+      "slot_id": "scope_and_subjects",
+      "name": "建设对象与范围",
+      "description": "明确建设或服务对象、业务地域组织或系统范围，并给出可识别的基本边界。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "construction_or_service_subject",
+        "business_geographic_organizational_or_system_scope",
+        "basic_boundary"
+      ],
+      "weak_conditions": [
+        "只有宽泛行业名称而没有建设或服务范围"
+      ],
+      "material_request": "补充建设或服务对象，以及业务、地域、组织或系统范围和明确边界。"
+    },
+    {
+      "slot_id": "objectives",
+      "name": "建设目标",
+      "description": "描述预期达到的状态，并使目标可以检查或能够与现状问题对应。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "expected_target_state",
+        "verifiability_or_alignment_with_current_problem"
+      ],
+      "weak_conditions": [
+        "只有全面提升等口号",
+        "只有打造一流平台等口号"
+      ],
+      "material_request": "补充可检查的建设目标，并说明目标与现状问题或需求的对应关系。"
+    },
+    {
+      "slot_id": "solution_content_and_capabilities",
+      "name": "建设内容与能力",
+      "description": "列明具体建设内容、模块、功能或能力，并建立其与需求或目标的对应关系。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "concrete_content_module_function_or_capability",
+        "alignment_with_need_or_objective"
+      ],
+      "weak_conditions": [
+        "只有技术名词列表",
+        "只有产品宣传性表述"
+      ],
+      "material_request": "补充具体建设模块、功能或能力说明，以及它们对应的需求或建设目标。"
+    },
+    {
+      "slot_id": "implementation_conditions_and_boundaries",
+      "name": "实施条件与边界",
+      "description": "识别数据、系统对接、部署环境、组织保障、实施前提、能力限制或适用边界中的至少一类明确内容。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "at_least_one_explicit_implementation_condition_or_boundary"
+      ],
+      "weak_conditions": [
+        "只笼统声称易部署或无限制而没有具体条件",
+        "实施条件仅有标题而没有正文"
+      ],
+      "material_request": "补充数据和系统对接条件、部署环境、组织保障、实施前提、能力限制或适用边界中的至少一项。"
+    },
+    {
+      "slot_id": "reference_cases_and_proof",
+      "name": "项目案例与证明",
+      "description": "提供项目、客户或实施对象，实际实施内容，以及实施、上线、验收或应用状态。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "project_customer_or_implementation_subject",
+        "actual_implementation_content",
+        "implementation_launch_acceptance_or_usage_status"
+      ],
+      "weak_conditions": [
+        "只有客户名称或 Logo",
+        "只有案例标题",
+        "只有已广泛应用等自我声明"
+      ],
+      "material_request": "补充可核实的项目或客户、实际实施内容，以及上线、验收或应用状态证明。"
+    },
+    {
+      "slot_id": "outcomes_and_metrics",
+      "name": "建设成效与指标",
+      "description": "描述预期或实际成效，并给出明确作用对象或可检查的判断依据。",
+      "required": true,
+      "minimum_evidence": 1,
+      "required_fields": [
+        "expected_or_actual_outcome",
+        "outcome_subject_or_evaluation_basis",
+        "expected_or_actual_nature"
+      ],
+      "weak_conditions": [
+        "提升比例没有来源",
+        "量化数字没有计算口径",
+        "只有降本增效或提升治理能力等泛化结论",
+        "无法判断是预期效果还是实际效果"
+      ],
+      "material_request": "补充成效作用对象、指标口径和来源，并明确该成效属于预期目标还是实际结果。"
+    }
+  ],
+  "allow_partial": true,
+  "citation_required": true,
+  "risk_level": "high"
+}

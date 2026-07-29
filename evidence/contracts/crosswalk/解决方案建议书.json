@@ -1,0 +1,59 @@
+{
+  "crosswalk_version": "m2-crosswalk-v1",
+  "doc_type": "proposal-document",
+  "doc_type_zh": "解决方案建议书",
+  "contract_id": "solution_material_completeness_v1",
+  "_note": "手工建立、可审、可扩：把 solution-drafter 该 doc type 的 section.asset_needs 逐条映射到 Engine 8 槽契约的 slot_id；drafter 有而 Engine 8 槽无对应者标 out_of_evidence_scope（走 L3 领域插件/intake，不经 Engine）。source of truth = solution-drafter templates/解决方案建议书/outline.yaml（只读参照，不 vendored）。",
+  "sections": [
+    {
+      "section_id": "01",
+      "section_title": "公司实力",
+      "out_of_evidence_scope": true,
+      "reason": "公司主体信息（资质/简介/团队/业绩）来自 solution-drafter L3 领域插件 own_*，非项目材料证据；Engine 8 槽不覆盖。",
+      "asset_map": []
+    },
+    {
+      "section_id": "02",
+      "section_title": "项目理解",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {"asset_type": "行业政策", "slot_id": "background_and_basis"},
+        {"asset_type": "客户业务背景", "slot_id": "current_state_and_needs"}
+      ]
+    },
+    {
+      "section_id": "03",
+      "section_title": "方案架构",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {"asset_type": "产品能力", "slot_id": "solution_content_and_capabilities"},
+        {"asset_type": "技术架构参考", "slot_id": "solution_content_and_capabilities"},
+        {"asset_type": "集成案例", "slot_id": "reference_cases_and_proof"}
+      ]
+    },
+    {
+      "section_id": "04",
+      "section_title": "方案亮点",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {"asset_type": "差异化优势", "slot_id": "solution_content_and_capabilities"},
+        {"asset_type": "产品亮点", "slot_id": "solution_content_and_capabilities"}
+      ]
+    },
+    {
+      "section_id": "05",
+      "section_title": "类似案例",
+      "out_of_evidence_scope": false,
+      "asset_map": [
+        {"asset_type": "类似项目案例", "slot_id": "reference_cases_and_proof"}
+      ]
+    },
+    {
+      "section_id": "06",
+      "section_title": "报价概要",
+      "out_of_evidence_scope": true,
+      "reason": "报价来自 intake 的 budget_range / 商务侧，非项目材料证据；Engine 8 槽不覆盖。",
+      "asset_map": []
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "recheck_version": "m4-recheck-v2",
+  "audit_sheet_schema_version": "m4-audit-sheet-v1",
+  "binding_mode": true,
+  "auditor": "demo-auditor",
+  "audited_at": "2026-07-28",
+  "no_claim_sections": [],
+  "claims": [
+    {
+      "index": 0,
+      "section_id": "02",
+      "claim_text": "本项目响应国家数字经济与智慧城市政策，依据上级主管部门的专项规划批复推进园区治理数字化。",
+      "paragraph_id": "02#p01",
+      "paragraph_hash": "8eccdeefb6d798c0",
+      "claim_unit_id": "02#p01#u01",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e1"
+      ],
+      "cited_content": {
+        "e1": "> （合成示例，非真实数据）\n\n## 一、建设背景与依据\n\n近年国家出台数字经济与智慧城市**政策**，要求推进园区治理数字化。本项目**依据**上级主管部门\n"
+      },
+      "recheck": "PASS",
+      "detail": ""
+    },
+    {
+      "index": 1,
+      "section_id": "02",
+      "claim_text": "园区管理现状为各业务系统独立建设、数据不通，存在明显的信息孤岛问题，对统一数据底座与实时监测的需求迫切。",
+      "paragraph_id": "02#p02",
+      "paragraph_hash": "41eeb48323981446",
+      "claim_unit_id": "02#p02#u01",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e4"
+      ],
+      "cited_content": {
+        "e4": "## 二、现状问题与需求分析\n\n**现状**：各业务系统独立建设、数据不通，存在明显的信息孤岛**问题**。主要**需求**为统一数据\n底座、统一门户、统一运维；对实时监测与告警的**需求**迫切。\n\n"
+      },
+      "recheck": "PASS",
+      "detail": ""
+    },
+    {
+      "index": 2,
+      "section_id": "02",
+      "claim_text": "建设目标包括建成统一的园区管理平台、打通不少于三个业务系统的数据接口。",
+      "paragraph_id": "02#p03",
+      "paragraph_hash": "7d16ef9533c4a76e",
+      "claim_unit_id": "02#p03#u01",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e10"
+      ],
+      "cited_content": {
+        "e10": "## 三、建设目标\n\n**目标**一：建成统一的园区管理平台；**目标**二：打通不少于三个业务系统的数据接口；\n**目标**三：形成可持续运营机制。\n"
+      },
+      "recheck": "PASS",
+      "detail": ""
+    },
+    {
+      "index": 3,
+      "section_id": "03",
+      "claim_text": "平台建设内容包括统一数据底座、服务网关与运维中心，核心能力涵盖数据汇聚、空间可视化与告警联动。",
+      "paragraph_id": "03#p01",
+      "paragraph_hash": "a04ddb2ea757ce4d",
+      "claim_unit_id": "03#p01#u01",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e14"
+      ],
+      "cited_content": {
+        "e14": "（合成示例，非真实数据）\n\n一、建设内容与能力\n\n平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n"
+      },
+      "recheck": "PASS",
+      "detail": ""
+    },
+    {
+      "index": 4,
+      "section_id": "04",
+      "claim_text": "亮点一：平台具备多源数据接入、三维可视化与设备联动运维能力。",
+      "paragraph_id": "04#p01",
+      "paragraph_hash": "ea6de996326cf8b9",
+      "claim_unit_id": "04#p01#u01",
+      "verdict": "supported",
+      "cited_span_refs": [
+        "e16"
+      ],
+      "cited_content": {
+        "e16": "（合成示例，非真实数据）\n\n一、建设内容与能力\n\n平台**建设内容**包括统一数据底座、服务网关与运维中心。核心**能力**：数据汇聚**能力**、空间可视化**功能**、实时监测**功能**、告警联动**能力**。\n"
+      },
+      "recheck": "PASS",
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "total_claims": 5,
+    "PASS": 5,
+    "FABRICATED_REF": 0,
+    "TAMPERED_CONTENT": 0,
+    "JURISDICTION_VIOLATION": 0,
+    "CROSS_SECTION_CITATION": 0,
+    "UNKNOWN_SECTION": 0,
+    "CLAIM_NOT_IN_DRAFT": 0,
+    "hard_reject_count": 0,
+    "verdict_summary": {
+      "supported": 5,
+      "weak": 0,
+      "unsupported": 0,
+      "contradicted": 0,
+      "out_of_scope": 0
+    }
+  },
+  "completeness": {
+    "mode": "unit",
+    "expected_sections": [
+      "02",
+      "03",
+      "04"
+    ],
+    "uncovered_sections": [],
+    "uncovered_units": {},
+    "invalid_exemptions": [],
+    "status": "COMPLETE"
+  },
+  "rule_check_passed": true,
+  "delivery": {
+    "weak_policy": "block",
+    "admitted": true,
+    "status": "ADMITTED",
+    "reason": "交付准入通过：无 unsupported/contradicted 未处置",
+    "blocking_claims": [],
+    "weak_unresolved": [],
+    "applied_signoffs": []
+  },
+  "accepted": true,
+  "engine_boundary_note": "PASS 只代表规则层通过；supported/weak 的语义强弱由审计者判。但审计者的 unsupported/contradicted **有强制力**：未处置即阻断交付版（accepted=false）。Engine 不判该不该弱化，只强制'必须处置且留痕'。",
+  "input_digest": "576ecf2cc98171ded0613bf41365e944c5889ba09be1739f33b36f8d7653fc25"
+}

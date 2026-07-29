@@ -1,0 +1,66 @@
+# 包元数据与依赖的唯一来源。
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-runtime"
+# 代码/发行包版本（semver，独立于设计文档版本）。0.x = 公开前的预发布代码；
+# 代码版本随发行节奏走；公开设计文档描述当前架构，不使用独立发行版本。
+version = "0.1.0"
+description = "Evidence Agent 工作流：从项目材料、证据准备度、受约束撰写任务到 Claim Audit 与门控 DOCX 交付。"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "Hugin-Z" }]
+keywords = ["evidence", "retrieval", "rag", "gov-tech", "proposal", "claim-audit", "deterministic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Natural Language :: Chinese (Simplified)",
+]
+# 使用兼容范围而非应用级 hash lock；下游应用可按自身发布策略进一步固定版本。
+dependencies = [
+    "chromadb>=1.0,<2",
+    "jieba>=0.42,<0.43",       # 中文分词与 Exact Locator anchor
+    "python-docx>=1.1,<2",     # DOCX 解析与渲染
+    "pdfplumber>=0.11,<0.12",  # 文本型 PDF 解析
+]
+
+[project.urls]
+Homepage = "https://github.com/Hugin-Z/evidence-runtime"
+Repository = "https://github.com/Hugin-Z/evidence-runtime"
+Issues = "https://github.com/Hugin-Z/evidence-runtime/issues"
+
+[project.scripts]
+evidence-intake = "evidence.intake.__main__:main"
+evidence-library = "evidence.library.__main__:main"
+evidence-gap-check = "evidence.gap_checker:main"
+evidence-generate = "evidence.generation.__main__:main"
+evidence-audit = "evidence.claim_audit:main"
+evidence-render = "evidence.render.__main__:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+local-embedder = ["sentence-transformers>=2.2,<3"]
+# 私有验收工具的可选 XLSX 依赖。
+xlsx-audit = ["openpyxl>=3.1,<4"]
+# benchmark 的可选 parquet 依赖。
+bench = ["pyarrow>=15,<18"]
+
+# wheel 只包含单一顶层包 evidence；eval、tests、examples 与本地私有目录不进入发行包。
+[tool.setuptools.packages.find]
+include = ["evidence*"]
+exclude = ["eval*", "tests*", "examples*", ".internal*"]
+
+# 契约、crosswalk 与 section specs 随 wheel 分发。
+[tool.setuptools.package-data]
+"evidence.contracts" = ["*.json"]
+"evidence.contracts.crosswalk" = ["*.json"]
+"evidence.contracts.section_specs" = ["*.json"]

@@ -1,0 +1,47 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# 本机编辑器与操作系统文件
+.idea/
+.vscode/
+.chroma/
+corpus/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+STATUS-*.md
+.claude/
+.local/
+# 运行产出（README 端到端示例的默认 --output-dir）；含材料逐字正文，绝不入库
+out/
+# L1 材料库默认根目录（存放客户材料原件 + 该项目向量索引），绝不入库
+.library/
+eval/bench/data/
+# bench 跑批临时工作目录（默认落 %TEMP%；若 --work-dir 误指仓库内，防御性忽略 docs+chroma）
+bench_nfcorpus_*/
+bench_covid_*/
+# 可选 benchmark 逐 query 私有衔接件（含上游 id/qrels/排名）
+*.private.json
+eval/bench/results/private/
+
+# 内部资产区（lessons/archive/snapshots）——工作树保留、不入库
+.internal/
+
+# 打包构建产物
+*.egg-info/
+build/
+dist/
