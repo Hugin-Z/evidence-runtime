@@ -6,7 +6,7 @@
 > license links: [`THIRD_PARTY_NOTICES.md`](../../../THIRD_PARTY_NOTICES.md).
 
 ## 配置快照
-- 前三臂来源: **BENCH-EN-NFCorpus-v2-2026-07-15.md** @ commit `f07a5fe`（附录 RRF top-10 冻结，本次**不重跑、不重建索引**）
+- 前三臂来源: **BENCH-EN-NFCorpus-v2-2026-07-15.md** 的公开前冻结运行（附录 RRF top-10 冻结，本次**不重跑、不重建索引**）
 - 数据集: eval/bench/data/nfcorpus（test）；query 数 323；**评测单位 = document**（附录 RRF top-10 为 document id）
 - 建库/检索快照（同步 BENCH v2，自包含）: 切块器 **hs800v1**（bench 层硬切，over_limit=0）；服务端无截断（经验探测 cos(tail@3000tok)=**0.6818** < 0.98）；embedding context ≥8192；候选深度 **N_DOC=20 / chunk_cap=200**（每路折叠 ≥20 唯一 doc 进 RRF）
 - 第四臂 RERANK: 对 **RRF document top-10** 候选做 cross-encoder 精排（bge-reranker-v2-m3-Q8_0，llama.cpp b10012 win-cuda-12.4，`/v1/rerank`，port 1235，-ngl 99）
@@ -14,7 +14,7 @@
 - 头截断规则（既定）: document 全文 **头截断至 6000 字符**再送 reranker（6000 char + query ≪ 模型 8192-token max）——本次 **6** 个去重 document（占候选槽位 **48** 次，跨 query 含重复）被头截断。（注：向量臂建库按 800 字符硬切 chunk、服务端 context≥8192 无截断；精排见 document 头 6000 字符，上下文更全。此 6000 字符截断 v1 已披露，非勘误对象。）
 - nDCG@10 主口径 = **linear-gain**（trec_eval/BEIR 官方）；exponential 为诊断值（见下表，勿与公开数字并置）
 - 超时/重试: timeout 60s，retries 2（总尝试 3），线性退避 1.0s
-- git_head: `f07a5fe`；工作树: clean（可复现）
+- source_snapshot: 公开前冻结运行，原提交由维护者私存；本文件保留配置、指标与许可允许的逐项记录
 - 生成时间: 2026-07-16T08:26:04
 
 ## 四臂主表（全量，均值；nDCG@10 = linear-gain 主口径）

@@ -1,4 +1,4 @@
-# BENCH ZH-Covid-v2 — retrieval-router 三臂 × 5 指标（2026-07-16）
+# BENCH ZH-Covid-v2 — Evidence Runtime 检索三臂 × 5 指标（2026-07-16）
 
 ## 配置快照
 - 数据集: **covid**（dev），corpus **100001** passage / **949** query
@@ -7,7 +7,7 @@
 - 切块器: **hs800v1**（benchmark 层硬切）；max_chunk_chars=800；实测最长 chunk=800 字符；**over_limit=0**（建库断言无 chunk 超上限）
 - 评测单位: **document**；候选深度 N_DOC=20、chunk_cap=200（每路折叠 ≥N_DOC 唯一 doc 进 RRF）；rerank 候选 = RRF doc top-10
 - top_k（三臂统一）: 10　rrf_k: 60　collection: `corpus_vectors_hs800v1`　建库: 分批 batch=32，107954 chunk / 1269.0s
-- git_head: `eb38274`；工作树: clean（可复现）
+- source_snapshot: 公开前冻结运行，原提交由维护者私存；本文件保留配置与聚合指标
 - 中文词法臂: **jieba 0.42.1 分词**（仅 query 侧、仅词法臂；向量臂用原始 query）
 - 指标: recall@5 / recall@10 / MRR@10 / precision@5 / nDCG@10；**nDCG@10 主口径 = linear-gain**（trec_eval / BEIR 官方口径，公开对照唯一口径）
 - 生成时间: 2026-07-16T04:15:46
