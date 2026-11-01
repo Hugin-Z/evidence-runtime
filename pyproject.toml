@@ -52,7 +52,7 @@ local-embedder = ["sentence-transformers>=2.2,<3"]
 # 私有验收工具的可选 XLSX 依赖。
 xlsx-audit = ["openpyxl>=3.1,<4"]
 # benchmark 的可选 parquet 依赖。
-bench = ["pyarrow>=15,<18"]
+bench = ["pyarrow>=15,<27"]
 
 # wheel 只包含单一顶层包 evidence；eval、tests、examples 与本地私有目录不进入发行包。
 [tool.setuptools.packages.find]
