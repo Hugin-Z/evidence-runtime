@@ -47,7 +47,7 @@ evidence-audit = "evidence.claim_audit:main"
 evidence-render = "evidence.render.__main__:main"
 
 [project.optional-dependencies]
-test = ["pytest>=8.0,<9"]
+test = ["pytest>=8.0,<10"]
 local-embedder = ["sentence-transformers>=2.2,<3"]
 # 私有验收工具的可选 XLSX 依赖。
 xlsx-audit = ["openpyxl>=3.1,<4"]
